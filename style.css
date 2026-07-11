@@ -1108,7 +1108,16 @@ section {
   justify-content: center;
   color: #fff;
   font-weight: 700;
-  font-size: 16px
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.reviewer-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
 }
 
 .reviewer-name {
