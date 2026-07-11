@@ -647,20 +647,21 @@ nav.scrolled {
   transform: translateY(-3px)
 }
 
-/* Premium Section Header Row (flex layout) */
+/* Premium Section Header Row (centered text, absolute right button) */
 .section-header-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 2rem;
+  position: relative;
   width: 100%;
   margin-bottom: 48px;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .section-header-left {
-  flex: 1;
-  max-width: 700px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .section-header-left .section-sub {
@@ -668,7 +669,9 @@ nav.scrolled {
 }
 
 .section-header-right {
-  flex-shrink: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
   display: flex;
   align-items: center;
 }
@@ -708,21 +711,20 @@ nav.scrolled {
 }
 
 /* Responsive styles for Section Header Row */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .section-header-row {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.25rem;
-    text-align: left;
     margin-bottom: 32px;
   }
 
-  .section-header-left {
-    max-width: 100%;
+  .section-header-right {
+    position: static;
+    margin-top: 1.25rem;
+    justify-content: center;
+    width: 100%;
   }
 
   .view-all-btn {
-    width: 100%;
+    width: min(100%, 280px);
     justify-content: center;
   }
 }
