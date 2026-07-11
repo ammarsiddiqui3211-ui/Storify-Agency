@@ -400,13 +400,12 @@ nav.scrolled {
 
 /* Hero Stats Row Styling */
 .hero-stats-row {
-  grid-column: span 2;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   border-top: 1px dashed rgba(255, 255, 255, 0.15);
-  padding-top: 2.5rem;
-  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  margin-top: 1.5rem;
   width: 100%;
 }
 
@@ -1353,17 +1352,16 @@ section {
 /* Responsive adjustments for new hero stats row */
 @media (max-width: 1024px) {
   .hero-stats-row {
-    grid-column: span 1;
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 2rem !important;
-    margin-top: 2rem !important;
-    padding-top: 2rem !important;
+    gap: 1.5rem !important;
+    margin-top: 1.5rem !important;
+    padding-top: 1.25rem !important;
   }
 }
 
 @media (max-width: 480px) {
   .hero-stats-row {
     grid-template-columns: 1fr !important;
-    gap: 1.5rem !important;
+    gap: 1.25rem !important;
   }
 }
