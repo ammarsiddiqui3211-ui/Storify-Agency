@@ -984,10 +984,12 @@ footer {
 
   nav {
     padding: 1rem 5%;
+    transition: none !important;
   }
 
   nav.scrolled {
-    padding: 0.8rem 5%;
+    padding: 1rem 5% !important;
+    transition: none !important;
   }
 
   nav .nav-links,

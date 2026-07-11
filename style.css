@@ -2548,6 +2548,12 @@ section {
 @media(max-width: 800px) {
   nav {
     padding: 1rem 1.5rem;
+    transition: none !important;
+  }
+
+  nav.scrolled {
+    padding: 1rem 1.5rem !important;
+    transition: none !important;
   }
 
   .hero {
