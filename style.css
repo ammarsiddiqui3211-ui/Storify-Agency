@@ -413,6 +413,7 @@ nav.scrolled {
 .mobile-menu a:hover {
   color: var(--blue-light);
   background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
 }
 
 .mobile-menu .hero-stats {
@@ -3390,6 +3391,7 @@ textarea.form-input {
 .mobile-menu a.active {
   color: var(--white) !important;
   background: var(--blue) !important;
+  border-radius: 8px !important;
 }
 
 /* Premium Breadcrumb Badge Styles */
