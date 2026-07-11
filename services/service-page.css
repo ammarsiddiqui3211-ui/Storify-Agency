@@ -1350,19 +1350,55 @@ section {
   }
 }
 
-/* Responsive adjustments for new hero stats row */
+/* Responsive adjustments for new hero stats row to match index.html placement */
 @media (max-width: 1024px) {
   .hero-stats-row {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 1.5rem !important;
-    margin-top: 1.5rem !important;
-    padding-top: 1.25rem !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 0 !important;
+    width: min(100%, 360px) !important;
+    margin: 2rem auto 0 !important;
+    align-items: stretch !important;
+    justify-content: center !important;
+    border-top: none !important;
+    padding-top: 0 !important;
   }
-}
 
-@media (max-width: 480px) {
-  .hero-stats-row {
-    grid-template-columns: 1fr !important;
-    gap: 1.25rem !important;
+  .hero-stat-col {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    min-width: 0 !important;
+    padding: 14px 8px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14) !important;
+  }
+
+  .hero-stat-col:nth-child(odd) {
+    border-right: 1px solid rgba(255, 255, 255, 0.14) !important;
+  }
+
+  .hero-stat-col:nth-child(even) {
+    border-right: none !important;
+  }
+
+  .hero-stat-col:nth-child(n + 3) {
+    border-bottom: none !important;
+  }
+
+  .hero-stat-number {
+    display: block !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    font-size: clamp(1.65rem, 8vw, 2.15rem) !important;
+    line-height: 1.2 !important;
+  }
+
+  .hero-stat-label {
+    font-size: clamp(0.58rem, 2.5vw, 0.72rem) !important;
+    letter-spacing: 0.04em !important;
+    white-space: nowrap !important;
+    margin-top: 4px !important;
   }
 }
