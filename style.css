@@ -647,6 +647,86 @@ nav.scrolled {
   transform: translateY(-3px)
 }
 
+/* Premium Section Header Row (flex layout) */
+.section-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+  width: 100%;
+  margin-bottom: 48px;
+  text-align: left;
+}
+
+.section-header-left {
+  flex: 1;
+  max-width: 700px;
+}
+
+.section-header-left .section-sub {
+  margin-bottom: 0 !important; /* Reset default margin bottom */
+}
+
+.section-header-right {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Beautiful View All button */
+.view-all-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 12px 24px !important;
+  font-size: 0.9rem !important;
+  border-radius: 8px !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  background: transparent !important;
+  color: var(--white) !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.view-all-btn i {
+  font-size: 0.8rem;
+  transition: transform 0.25s ease;
+}
+
+.view-all-btn:hover {
+  background: var(--blue) !important;
+  border-color: var(--blue) !important;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3) !important;
+  transform: translateY(-2px);
+}
+
+.view-all-btn:hover i {
+  transform: translateX(4px);
+}
+
+/* Responsive styles for Section Header Row */
+@media (max-width: 768px) {
+  .section-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    text-align: left;
+    margin-bottom: 32px;
+  }
+
+  .section-header-left {
+    max-width: 100%;
+  }
+
+  .view-all-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 .hero-stats {
   display: flex;
   gap: 48px;
