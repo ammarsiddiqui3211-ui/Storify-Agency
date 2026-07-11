@@ -1952,11 +1952,13 @@ footer {
 @media(max-width:800px) {
 
   nav {
-    padding: 1rem 5%;
+    padding: 1rem 1.5rem !important;
+    transition: none !important;
   }
 
   nav.scrolled {
-    padding: .8rem 5%;
+    padding: 1rem 1.5rem !important;
+    transition: none !important;
   }
 
   .why-grid,
@@ -2547,7 +2549,7 @@ section {
 
 @media(max-width: 800px) {
   nav {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.5rem !important;
     transition: none !important;
   }
 
@@ -3464,12 +3466,13 @@ h4,
 
 /* ==================== CUSTOM CURSOR ==================== */
 @media (pointer: fine) {
-  body, 
-  a, 
-  button, 
-  input, 
-  select, 
-  textarea, 
+
+  body,
+  a,
+  button,
+  input,
+  select,
+  textarea,
   [role="button"],
   .hamburger,
   .mobile-menu-close,

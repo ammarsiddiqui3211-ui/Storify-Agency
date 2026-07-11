@@ -983,12 +983,12 @@ footer {
   }
 
   nav {
-    padding: 1rem 5%;
+    padding: 1rem 1.5rem !important;
     transition: none !important;
   }
 
   nav.scrolled {
-    padding: 1rem 5% !important;
+    padding: 1rem 1.5rem !important;
     transition: none !important;
   }
 
@@ -1239,7 +1239,7 @@ section {
 /* Featured row gets a brighter outer glow ring */
 .scope-timeline-row.featured .scope-node {
   box-shadow: 0 0 0 4px rgba(76, 124, 255, 0.22),
-              0 0 15px rgba(76, 124, 255, 0.25) !important;
+    0 0 15px rgba(76, 124, 255, 0.25) !important;
 }
 
 .scope-timeline-row:hover .scope-node {
@@ -1255,7 +1255,8 @@ section {
 }
 
 .scope-content h3 {
-  font-size: 1.125rem !important; /* ~18px */
+  font-size: 1.125rem !important;
+  /* ~18px */
   font-weight: 700 !important;
   color: #F3EDE1 !important;
   margin: 0 0 8px 0 !important;
@@ -1285,7 +1286,8 @@ section {
 }
 
 .scope-content p {
-  font-size: 0.85rem !important; /* ~13.5px */
+  font-size: 0.85rem !important;
+  /* ~13.5px */
   color: #8892A0 !important;
   line-height: 1.65 !important;
   margin: 0 0 12px 0 !important;
@@ -1335,7 +1337,7 @@ section {
 
   .scope-timeline-row.featured .scope-node {
     box-shadow: 0 0 0 3px rgba(76, 124, 255, 0.22),
-                0 0 10px rgba(76, 124, 255, 0.2) !important;
+      0 0 10px rgba(76, 124, 255, 0.2) !important;
   }
 
   .scope-node i {
