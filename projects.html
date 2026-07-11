@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recent Projects & Portfolio | eCommerce launches & Ads | Storify</title>
+  <meta name="description"
+    content="View recent projects completed by Storify: Shopify store launches, social media creative strategies, Facebook & TikTok ad campaigns, and custom eCommerce designs.">
+  <meta name="keywords"
+    content="eCommerce portfolio, Shopify store examples, digital marketing cases, paid ads agency, social media creatives, online store design, Storify Agency">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Storify Agency">
+  <link rel="canonical" href="https://storify.services/projects.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://storify.services/projects.html">
+  <meta property="og:title" content="eCommerce Portfolio & Recent Projects | Storify">
+  <meta property="og:description"
+    content="Browse our portfolio of Shopify setup, branding, and digital ad campaigns that scaled online stores.">
+  <meta property="og:image" content="https://storify.services/images/logo/banner.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="eCommerce Portfolio | Storify">
+  <meta name="twitter:description"
+    content="See case studies and design launches from our agency team. Built for conversions and brand growth.">
+  <meta name="twitter:image" content="https://storify.services/images/logo/banner.png">
+  <link rel="icon" type="image/png" href="images/favicon/logo.png">
+  <link rel="sitemap" type="application/xml" href="https://storify.services/sitemap.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Page-Specific Styles for Projects Page */
+    .projects-hero {
+      min-height: 70vh;
+      background:
+        radial-gradient(circle at 25% 15%, rgba(37, 99, 235, 0.16), transparent 35%),
+        radial-gradient(circle at 75% 65%, rgba(6, 182, 212, 0.1), transparent 30%),
+        linear-gradient(180deg, var(--dark), var(--black));
+      padding-top: 140px;
+    }
+
+    .breadcrumb {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .breadcrumb a {
+      color: var(--blue-bright);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .breadcrumb a:hover {
+      color: var(--white);
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    /* Filters styles */
+    .filter-btn {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--muted);
+      padding: 10px 24px;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--blue);
+      color: var(--white);
+      border-color: var(--blue);
+      box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+      transform: translateY(-2px);
+    }
+
+    .project-card {
+      transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease, opacity 0.4s ease;
+    }
+
+    .project-card.hidden {
+      opacity: 0;
+      transform: scale(0.9);
+      pointer-events: none;
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="subpage">
+  <nav>
+    <a href="index.html" class="logo" aria-label="Storify home">
+      <div class="logo-box">
+        <img src="images/logo/logo.png" alt="Storify Logo">
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="why-us.html">Why Us</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="contact.html">Book a Call</a>
+    <div class="hamburger" role="button" tabindex="0" aria-label="Open mobile menu" onclick="toggleMenu()"
+      onkeydown="handleMenuKey(event)"><span></span><span></span><span></span></div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-close" role="button" tabindex="0" aria-label="Close mobile menu" onclick="toggleMenu()"
+      onkeydown="handleMenuKey(event)">&times;</div>
+    <ul>
+      <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
+      <li><a href="why-us.html" onclick="toggleMenu()">Why Us</a></li>
+      <li><a href="projects.html" class="active" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="testimonials.html" onclick="toggleMenu()">Testimonials</a></li>
+      <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+      <li><a href="blog.html" onclick="toggleMenu()">Blog</a></li>
+      <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+    <div class="mobile-contact">
+      <div class="mobile-contact-info">
+        <a href="mailto:storify.store.co@gmail.com" onclick="toggleMenu()">storify.store.co@gmail.com</a>
+        <a href="tel:+923705639606" onclick="toggleMenu()">+92 370 5639606</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <header class="hero projects-hero">
+      <div class="particles-bg" id="projectsHeroPart"></div>
+      <div class="hero-inner">
+        <div class="breadcrumb"><a href="index.html">Home</a> / Projects</div>
+        <h1>Recent Projects</h1>
+        <p class="hero-copy">A showcase of eCommerce stores we've built, custom creatives we've designed, and data-driven ad campaigns we've scaled for our global partners.</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="contact.html">Launch a Project With Us</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- PORTFOLIO SECTION -->
+    <section style="background: var(--black)">
+      <div class="center reveal">
+        <span class="section-tag">Our Portfolio</span>
+        <h2 class="section-title">Case Highlights</h2>
+        <p class="section-sub">Filter by service categories to view specific design, launch, and marketing executions.</p>
+
+        <!-- Category Filters -->
+        <div class="project-filters" style="display: flex; gap: 12px; justify-content: center; margin: 32px auto 0; flex-wrap: wrap; max-width: 800px;">
+          <button class="filter-btn active" onclick="filterProjects('all', this)">All Works</button>
+          <button class="filter-btn" onclick="filterProjects('ecommerce', this)">eCommerce & Shopify</button>
+          <button class="filter-btn" onclick="filterProjects('marketing', this)">Paid Ads & Marketing</button>
+          <button class="filter-btn" onclick="filterProjects('creatives', this)">Creatives & Social Media</button>
+        </div>
+      </div>
+
+      <div class="projects-grid" id="portfolioGrid" style="margin-top: 48px;">
+        <a class="project-card reveal" data-category="marketing creatives"
+          href="https://gulzon.com/products/contour-memory-foam-pillow-cervical-support-pillow-detachable-breathable-cover?variant=47264667009218"
+          target="_blank" rel="noopener noreferrer">
+          <div class="project-thumb"><img src="images/portfolio/gulzon.PNG" alt="Gulzon eCommerce Project"></div>
+          <div class="project-body">
+            <h3>Gulzon Store — Digital Marketing</h3>
+            <p>Boosted sales and profitability for US-based Gulzon Store through strategic eCommerce marketing.</p>
+            <div class="project-tags"><span class="proj-tag">Creatives</span><span class="proj-tag">Meta Ads</span><span
+                class="proj-tag">TikTok Ads</span></div>
+          </div>
+        </a>
+
+        <a class="project-card reveal" data-category="creatives" href="https://www.instagram.com/brunomoreiraofficial/" target="_blank"
+          rel="noopener noreferrer">
+          <div class="project-thumb"><img src="images/portfolio/Social Media.webp" alt="Bruno Moreira Social Media Project"></div>
+          <div class="project-body">
+            <h3>Bruno Moreira — Creatives</h3>
+            <p>Social Media + Clipping. Grew Instagram from 1K to 7K followers in just 1 month through strategic content
+              and growth tactics.</p>
+            <div class="project-tags"><span class="proj-tag">Creatives</span><span class="proj-tag">Social
+                Media</span><span class="proj-tag">Video</span></div>
+          </div>
+        </a>
+
+        <a class="project-card reveal" data-category="marketing creatives" href="https://share.google/beKK7GE7pURK8D70k" target="_blank"
+          rel="noopener noreferrer">
+          <div class="project-thumb"><img src="images/portfolio/simzon.png" alt="Simzon Institute Lead Gen Project"></div>
+          <div class="project-body">
+            <h3>Simzon Institute — Meta Ads</h3>
+            <p>Targeted Meta ad campaigns that drove significant traffic and conversions for Simzon Training Institute.</p>
+            <div class="project-tags"><span class="proj-tag">Meta Ads</span><span class="proj-tag">Social
+                Media</span><span class="proj-tag">Creatives</span></div>
+          </div>
+        </a>
+
+        <a class="project-card reveal" data-category="marketing creatives" href="https://share.google/4vkpFifzyF9s4Hn1n" target="_blank"
+          rel="noopener noreferrer">
+          <div class="project-thumb"><img src="images/portfolio/fitzon.png" alt="Fitzon Gym Member Ads Project"></div>
+          <div class="project-body">
+            <h3>Fitzon Gym — Meta Ads</h3>
+            <p>Targeted Meta ad campaigns and creative content that increased Gym memberships and local engagement.</p>
+            <div class="project-tags"><span class="proj-tag">Meta Ads</span><span class="proj-tag">Social
+                Media</span><span class="proj-tag">Creatives</span></div>
+          </div>
+        </a>
+
+        <a class="project-card reveal" data-category="creatives" href="https://share.google/suHHTSTtcRboSMRV1" target="_blank"
+          rel="noopener noreferrer">
+          <div class="project-thumb"><img src="images/portfolio/oxxpump.png" alt="LA OxxPump Post Design Project"></div>
+          <div class="project-body">
+            <h3>LA OxxPump — Creative Strategy</h3>
+            <p>Developed a comprehensive creative strategy that boosted brand awareness and drove engagement for La
+              OxxPump Gym.</p>
+            <div class="project-tags"><span class="proj-tag">Creatives</span><span class="proj-tag">Social
+                Media</span><span class="proj-tag">Post Designs</span></div>
+          </div>
+        </a>
+
+        <a class="project-card reveal" data-category="ecommerce marketing" href="https://aurajewelry.ae/" target="_blank" rel="noopener noreferrer">
+          <div class="project-thumb"><img src="images/portfolio/Aura Jewelry.PNG" alt="Aura Jewelry Shopify Launch Project"></div>
+          <div class="project-body">
+            <h3>Aura Jewelry — Full Launch</h3>
+            <p>Full Shopify store setup and optimization for a UAE-based jewelry brand with a conversion-focused
+              creatives strategy to elevate brand presence and drive sales.</p>
+            <div class="project-tags"><span class="proj-tag">Shopify</span><span class="proj-tag">Branding</span><span
+                class="proj-tag">TikTok Ads</span></div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band" style="background: var(--dark); padding: 96px 6% 96px;">
+      <div class="cta-box" style="margin: 0 auto; grid-template-columns: 1fr; text-align: center; gap: 2rem;">
+        <div class="cta-content" style="max-width: 100%;">
+          <div class="cta-label" style="margin: 0 auto 1.5rem;">Ready to build yours?</div>
+          <h2 class="cta-h2" style="margin-bottom: 1.5rem;">Let's launch a premium storefront together.</h2>
+          <p class="cta-sub" style="margin: 0 auto 2.5rem; text-align: center;">Get your dropshipping store, brand storefront, or ad creative campaigns executed by eCommerce experts.</p>
+          <div class="cta-actions" style="justify-content: center; gap: 1rem;">
+            <a href="contact.html" class="btn-primary">
+              Book a Free Consultation
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M3 7h8M7.5 3.5l4 3.5-4 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="https://wa.me/923705639606" class="btn-ghost" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-whatsapp"></i>
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <div class="footer-logo-box">
+            <img src="images/logo/logo.png" alt="Storify Logo">
+          </div>
+        </div>
+        <p class="footer-about">Pakistan's all-in-one eCommerce agency. We build, grow, and scale online stores with
+          expert strategy, design, and marketing.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services/design.html">Design</a></li>
+          <li><a href="services/development.html">Development</a></li>
+          <li><a href="services/marketing.html">Marketing</a></li>
+          <li><a href="services/social-media.html">Social Media</a></li>
+          <li><a href="services/ecommerce.html">eCommerce</a></li>
+          <li><a href="blog.html">Growth Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:storify.store.co@gmail.com?subject=Free%20Consultation%20Request">storify.store.co@gmail.com</a></li>
+          <li><a href="tel:03705639606">0370 5639606</a></li>
+          <li><a href="https://wa.me/923705639606" target="_blank" rel="noopener noreferrer">WhatsApp Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Storify. All rights reserved.</span>
+      <span>Built for eCommerce Growth</span>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('mobileMenu');
+      if (!menu) return;
+      menu.classList.toggle('open');
+      var isOpen = menu.classList.contains('open');
+      menu.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    }
+
+    function handleMenuKey(event) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        toggleMenu();
+      }
+    }
+
+    window.addEventListener('scroll', function () {
+      var nav = document.querySelector('nav');
+      if (nav) {
+        nav.classList.toggle('scrolled', window.scrollY > 50);
+      }
+    });
+
+    function makeParticles(id, n) {
+      var c = document.getElementById(id);
+      if (!c) return;
+      for (var i = 0; i < n; i++) {
+        var p = document.createElement('div');
+        p.className = 'particle';
+        p.style.cssText = 'left:' + Math.random() * 100 + '%;animation-duration:' + (6 + Math.random() * 12) + 's;animation-delay:' + Math.random() * 10 + 's;opacity:' + (0.1 + Math.random() * 0.35);
+        c.appendChild(p);
+      }
+    }
+
+    function initReveal() {
+      var els = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        var obs = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e, i) {
+            if (e.isIntersecting) {
+              setTimeout(function () { e.target.classList.add('visible'); }, i * 70);
+            }
+          });
+        }, { threshold: 0.1 });
+        els.forEach(function (el) { obs.observe(el); });
+      } else {
+        els.forEach(function (el) { el.classList.add('visible'); });
+      }
+    }
+
+    function filterProjects(category, btnEl) {
+      // Toggle active filter button style
+      document.querySelectorAll('.filter-btn').forEach(function(btn) {
+        btn.classList.remove('active');
+      });
+      if (btnEl) btnEl.classList.add('active');
+
+      // Filter cards
+      var cards = document.querySelectorAll('.project-card');
+      cards.forEach(function(card) {
+        if (category === 'all') {
+          card.classList.remove('hidden');
+        } else {
+          var categories = card.getAttribute('data-category') || '';
+          if (categories.split(' ').includes(category)) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        }
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', function() {
+      makeParticles('projectsHeroPart', 38);
+      initReveal();
+    });
+  </script>
+</body>
+
+</html>

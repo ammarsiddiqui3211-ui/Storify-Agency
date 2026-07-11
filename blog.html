@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eCommerce Growth Blog | Conversion & Marketing Insights | Storify</title>
+  <meta name="description"
+    content="Read the Storify blog for actionable eCommerce tips: landing page CRO, product copywriting, Meta & TikTok ad scaling, technical SEO, and checkout optimization.">
+  <meta name="keywords"
+    content="eCommerce growth blog, conversion rate optimization tips, Shopify tips, product page seo, paid ads checklist, content marketing, Storify Agency">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Storify Agency">
+  <link rel="canonical" href="https://storify.services/blog.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://storify.services/blog.html">
+  <meta property="og:title" content="eCommerce Growth Blog | Storify">
+  <meta property="og:description"
+    content="Actionable marketing, design, and CRO articles to help online brands scale profitably.">
+  <meta property="og:image" content="https://storify.services/images/logo/banner.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="eCommerce Growth Blog | Storify">
+  <meta name="twitter:description"
+    content="Actionable tips for online store founders. Learn about CRO, copy, ads, and search optimization.">
+  <meta name="twitter:image" content="https://storify.services/images/logo/banner.png">
+  <link rel="icon" type="image/png" href="images/favicon/logo.png">
+  <link rel="sitemap" type="application/xml" href="https://storify.services/sitemap.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Page-Specific Styles for Blog Page */
+    .blog-hero {
+      min-height: 70vh;
+      background:
+        radial-gradient(circle at 10% 30%, rgba(37, 99, 235, 0.16), transparent 35%),
+        radial-gradient(circle at 90% 80%, rgba(6, 182, 212, 0.1), transparent 30%),
+        linear-gradient(180deg, var(--dark), var(--black));
+      padding-top: 140px;
+    }
+
+    .breadcrumb {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .breadcrumb a {
+      color: var(--blue-bright);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .breadcrumb a:hover {
+      color: var(--white);
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .blog-section {
+      background: var(--black) !important;
+    }
+  </style>
+</head>
+
+<body class="subpage">
+  <nav>
+    <a href="index.html" class="logo" aria-label="Storify home">
+      <div class="logo-box">
+        <img src="images/logo/logo.png" alt="Storify Logo">
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="why-us.html">Why Us</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="contact.html">Book a Call</a>
+    <div class="hamburger" role="button" tabindex="0" aria-label="Open mobile menu" onclick="toggleMenu()"
+      onkeydown="handleMenuKey(event)"><span></span><span></span><span></span></div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-close" role="button" tabindex="0" aria-label="Close mobile menu" onclick="toggleMenu()"
+      onkeydown="handleMenuKey(event)">&times;</div>
+    <ul>
+      <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
+      <li><a href="why-us.html" onclick="toggleMenu()">Why Us</a></li>
+      <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="testimonials.html" onclick="toggleMenu()">Testimonials</a></li>
+      <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+      <li><a href="blog.html" class="active" onclick="toggleMenu()">Blog</a></li>
+      <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+    <div class="mobile-contact">
+      <div class="mobile-contact-info">
+        <a href="mailto:storify.store.co@gmail.com" onclick="toggleMenu()">storify.store.co@gmail.com</a>
+        <a href="tel:+923705639606" onclick="toggleMenu()">+92 370 5639606</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <header class="hero blog-hero">
+      <div class="particles-bg" id="blogHeroPart"></div>
+      <div class="hero-inner">
+        <div class="breadcrumb"><a href="index.html">Home</a> / Blog</div>
+        <h1>eCommerce Growth Blog</h1>
+        <p class="hero-copy">Practical advice, guides, and check-lists to help founders improve conversions, optimize product listings, and scale search traffic.</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#blog-grid-sec">Browse Articles</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- BLOG SECTION -->
+    <section id="blog-grid-sec" class="blog-section">
+      <div class="center reveal">
+        <span class="section-tag">Latest Insights</span>
+        <h2 class="section-title">Insights That Help Stores Sell More</h2>
+        <p class="section-sub">Practical eCommerce advice for founders who want better conversions, stronger content, and clearer growth decisions.</p>
+      </div>
+
+      <div class="blog-grid reveal" style="margin-top: 48px;">
+        <div class="projects-grid">
+          <div class="project-card reveal">
+            <div class="project-thumb"><img src="images/blogs/Convertion.jpeg" alt="7 Conversion Fixes"></div>
+            <div class="project-body">
+              <h3>7 Conversion Fixes Every eCommerce Store Should Make</h3>
+              <p>Sharper product pages, clearer trust signals, faster checkout paths, and offers that convert.</p>
+              <div class="project-tags"><span class="proj-tag">Conversion</span><span
+                  class="proj-tag">Optimization</span></div>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-thumb"><img src="images/blogs/Product Page.jpg" alt="Silent Salespeople Product Page"></div>
+            <div class="project-body">
+              <h3>How to Turn Product Pages Into Silent Salespeople</h3>
+              <p>Benefit-led copy, comparison cues, social proof, and friction-free CTAs that help shoppers choose.</p>
+              <div class="project-tags"><span class="proj-tag">Strategy</span><span class="proj-tag">Copy</span></div>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-thumb"><img src="images/blogs/Ads Funnel.jpg" alt="Ad Spend Checklist"></div>
+            <div class="project-body">
+              <h3>The Ad Funnel Checklist We Use Before Scaling Spend</h3>
+              <p>Pre-launch checks for creative angles, landing pages, remarketing, and offer clarity.</p>
+              <div class="project-tags"><span class="proj-tag">Marketing</span><span class="proj-tag">Ads</span></div>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-thumb"><img src="images/blogs/SEO.webp" alt="Organic Growth SEO"></div>
+            <div class="project-body">
+              <h3>SEO Optimizations That Drive Organic Growth</h3>
+              <p>Technical fixes, structured content, and on-page improvements to increase discoverability.</p>
+              <div class="project-tags"><span class="proj-tag">SEO</span><span class="proj-tag">Organic</span></div>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-thumb"><img src="images/blogs/content strategy.jpg" alt="Content Marketing Strategy"></div>
+            <div class="project-body">
+              <h3>Content Strategy: Turn Blog Readers Into Buyers</h3>
+              <p>Mapping content to the buyer journey and connecting every post to a clear sales action.</p>
+              <div class="project-tags"><span class="proj-tag">Content</span><span class="proj-tag">Strategy</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-thumb"><img src="images/blogs/checkout.png" alt="Checkout Redesign CRO"></div>
+            <div class="project-body">
+              <h3>Checkout Redesign — Faster Conversions</h3>
+              <p>Reduce friction with clearer CTAs, smarter upsells, and faster payment flows for mobile shoppers.</p>
+              <div class="project-tags"><span class="proj-tag">UX</span><span class="proj-tag">Conversion</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band" style="background: var(--dark); padding: 96px 6% 96px;">
+      <div class="cta-box" style="margin: 0 auto; grid-template-columns: 1fr; text-align: center; gap: 2rem;">
+        <div class="cta-content" style="max-width: 100%;">
+          <div class="cta-label" style="margin: 0 auto 1.5rem;">Never Miss an Update</div>
+          <h2 class="cta-h2" style="margin-bottom: 1.5rem;">Want customized growth advice?</h2>
+          <p class="cta-sub" style="margin: 0 auto 2.5rem; text-align: center;">Book a call to discuss how these strategies can be customized and implemented for your Shopify storefront.</p>
+          <div class="cta-actions" style="justify-content: center; gap: 1rem;">
+            <a href="contact.html" class="btn-primary">
+              Book a Free Consultation
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M3 7h8M7.5 3.5l4 3.5-4 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="https://wa.me/923705639606" class="btn-ghost" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-whatsapp"></i>
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <div class="footer-logo-box">
+            <img src="images/logo/logo.png" alt="Storify Logo">
+          </div>
+        </div>
+        <p class="footer-about">Pakistan's all-in-one eCommerce agency. We build, grow, and scale online stores with
+          expert strategy, design, and marketing.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services/design.html">Design</a></li>
+          <li><a href="services/development.html">Development</a></li>
+          <li><a href="services/marketing.html">Marketing</a></li>
+          <li><a href="services/social-media.html">Social Media</a></li>
+          <li><a href="services/ecommerce.html">eCommerce</a></li>
+          <li><a href="blog.html" class="active">Growth Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:storify.store.co@gmail.com?subject=Free%20Consultation%20Request">storify.store.co@gmail.com</a></li>
+          <li><a href="tel:03705639606">0370 5639606</a></li>
+          <li><a href="https://wa.me/923705639606" target="_blank" rel="noopener noreferrer">WhatsApp Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Storify. All rights reserved.</span>
+      <span>Built for eCommerce Growth</span>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('mobileMenu');
+      if (!menu) return;
+      menu.classList.toggle('open');
+      var isOpen = menu.classList.contains('open');
+      menu.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    }
+
+    function handleMenuKey(event) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        toggleMenu();
+      }
+    }
+
+    window.addEventListener('scroll', function () {
+      var nav = document.querySelector('nav');
+      if (nav) {
+        nav.classList.toggle('scrolled', window.scrollY > 50);
+      }
+    });
+
+    function makeParticles(id, n) {
+      var c = document.getElementById(id);
+      if (!c) return;
+      for (var i = 0; i < n; i++) {
+        var p = document.createElement('div');
+        p.className = 'particle';
+        p.style.cssText = 'left:' + Math.random() * 100 + '%;animation-duration:' + (6 + Math.random() * 12) + 's;animation-delay:' + Math.random() * 10 + 's;opacity:' + (0.1 + Math.random() * 0.35);
+        c.appendChild(p);
+      }
+    }
+
+    function initReveal() {
+      var els = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        var obs = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e, i) {
+            if (e.isIntersecting) {
+              setTimeout(function () { e.target.classList.add('visible'); }, i * 70);
+            }
+          });
+        }, { threshold: 0.1 });
+        els.forEach(function (el) { obs.observe(el); });
+      } else {
+        els.forEach(function (el) { el.classList.add('visible'); });
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', function() {
+      makeParticles('blogHeroPart', 38);
+      initReveal();
+    });
+  </script>
+</body>
+
+</html>
