@@ -332,24 +332,34 @@ nav.scrolled {
 }
 
 .hero h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   max-width: 100%;
-  color: var(--white);
-  font-size: clamp(2.4rem, 4.8vw, 3.8rem);
-  font-weight: 800 !important;
-  line-height: 1.1;
+  font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+  font-weight: 900 !important;
+  line-height: 1.15;
   letter-spacing: -0.03em;
   margin-bottom: 1.5rem;
-  overflow-wrap: anywhere;
-  text-wrap: balance;
   text-align: left !important;
 }
 
-.gradient-text {
-  background: linear-gradient(135deg, var(--white) 30%, var(--blue-bright) 100%);
-  -webkit-background-clip: text;
+.hero h1 span {
+  display: block;
+}
+
+.hero h1 span.line-1 {
+  color: var(--white);
+}
+
+.hero h1 span.line-2 {
+  color: var(--blue-bright);
+}
+
+.hero h1 span.line-3 {
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.25);
   -webkit-text-fill-color: transparent;
-  background-clip: text;
-  display: inline-block;
 }
 
 .hero .hero-copy {
@@ -366,6 +376,64 @@ nav.scrolled {
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: flex-start !important;
+}
+
+.hero-actions .btn-primary,
+.hero-actions .btn-secondary,
+.hero-actions .btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  font-weight: 700;
+  padding: 0 24px;
+}
+
+.hero-actions i {
+  font-size: 0.85rem;
+  transition: transform 0.2s ease;
+}
+
+.hero-actions a:hover i {
+  transform: translateX(4px);
+}
+
+/* Hero Stats Row Styling */
+.hero-stats-row {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  border-top: 1px dashed rgba(255, 255, 255, 0.15);
+  padding-top: 2.5rem;
+  margin-top: 2.5rem;
+  width: 100%;
+}
+
+.hero-stat-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+}
+
+.hero-stat-number {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1;
+  background: linear-gradient(135deg, var(--white) 30%, var(--blue-bright) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-stat-label {
+  font-size: 0.75rem;
+  color: var(--muted);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 /* ==================== DASHBOARD MOCKUP ==================== */
@@ -1019,10 +1087,25 @@ footer {
   padding: 0.4rem 1rem !important;
   border-radius: 100px !important;
   box-shadow: none !important;
+  display: inline-flex !important;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 2rem !important;
+  width: fit-content;
 }
 
 .breadcrumb a {
   color: var(--blue-bright) !important;
+}
+
+.breadcrumb::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #4ade80;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #4ade80;
 }
 
 /* Clean uniform card display matching hang-tag / swatch tag design */
@@ -1051,6 +1134,32 @@ section {
   box-shadow: none !important;
   border-radius: 0 !important;
   transform: none !important;
+}
+
+/* Playbook Section Divider Position Adjustments */
+.playbook-section {
+  position: relative !important;
+}
+
+.playbook-section::before {
+  content: '' !important;
+  display: block !important;
+  width: 100vw !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  height: 12px !important;
+  background:
+    linear-gradient(to right, #1E2530, #1E2530) center / 100% 1px no-repeat,
+    repeating-linear-gradient(to right, #2A3240, #2A3240 1px, transparent 1px, transparent 20px) left center / 100% 8px no-repeat !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+.playbook-section .section-header::after {
+  display: none !important;
 }
 
 /* Custom override to ensure FontAwesome icons inside .svc-icon-wrap are colored solid blue */
@@ -1238,5 +1347,23 @@ section {
   .scope-content h3 {
     font-size: 1.05rem !important;
     gap: 8px !important;
+  }
+}
+
+/* Responsive adjustments for new hero stats row */
+@media (max-width: 1024px) {
+  .hero-stats-row {
+    grid-column: span 1;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 2rem !important;
+    margin-top: 2rem !important;
+    padding-top: 2rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-stats-row {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
   }
 }

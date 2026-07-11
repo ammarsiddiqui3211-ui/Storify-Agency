@@ -3455,3 +3455,60 @@ h4,
 .contact-hero h1 {
   font-weight: 400 !important;
 }
+
+/* ==================== CUSTOM CURSOR ==================== */
+@media (pointer: fine) {
+  body, 
+  a, 
+  button, 
+  input, 
+  select, 
+  textarea, 
+  [role="button"],
+  .hamburger,
+  .mobile-menu-close,
+  .interactive {
+    cursor: none !important;
+  }
+
+  .custom-cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--blue-bright, #4C7CFF);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 999999;
+    box-shadow: 0 0 10px var(--blue-bright, #4C7CFF), 0 0 20px var(--blue-bright, #4C7CFF);
+    transform: translate(-50%, -50%);
+    will-change: transform;
+  }
+
+  .custom-cursor-ring {
+    width: 32px;
+    height: 32px;
+    border: 1.5px solid var(--blue-bright, #4C7CFF);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 999998;
+    transform: translate(-50%, -50%);
+    will-change: transform;
+    transition: width 0.2s, height 0.2s, border-color 0.2s, background-color 0.2s;
+  }
+
+  .custom-cursor-dot.hover {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+
+  .custom-cursor-ring.hover {
+    width: 48px;
+    height: 48px;
+    border-color: var(--white, #ffffff);
+    background-color: rgba(76, 124, 255, 0.08);
+  }
+}
