@@ -275,6 +275,97 @@ nav.scrolled {
   border-color: rgba(37, 99, 235, 0.3);
 }
 
+/* Navigation Hover Dropdown Menu styling */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.dropdown-arrow {
+  font-size: 0.7rem;
+  transition: transform 0.25s ease;
+  opacity: 0.7;
+}
+
+.dropdown:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  width: 230px;
+  background: rgba(10, 15, 30, 0.96);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 0.6rem 0;
+  list-style: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 1px rgba(255, 255, 255, 0.2) inset;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+  pointer-events: none;
+  margin: 0;
+}
+
+.dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: 0;
+  right: 0;
+  height: 15px;
+  background: transparent;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(4px);
+  pointer-events: auto;
+}
+
+.dropdown-menu li {
+  width: 100%;
+  padding: 0 0.4rem;
+  margin: 0;
+  border-bottom: none !important;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.65rem 0.85rem !important;
+  color: rgba(255, 255, 255, 0.75) !important;
+  text-decoration: none !important;
+  font-size: 0.85rem !important;
+  font-weight: 500 !important;
+  text-align: left !important;
+  border-radius: 6px !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  transition: all 0.2s ease !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  position: relative !important;
+  margin: 0 !important;
+}
+
+.dropdown-menu a:hover {
+  color: var(--white) !important;
+  background: rgba(76, 124, 255, 0.15) !important;
+  transform: translateX(4px) !important;
+}
+
 
 
 
