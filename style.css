@@ -2654,8 +2654,9 @@ section {
 
   .hero h1 {
     font-size: clamp(27px, 8.7vw, 42px);
-    line-height: 1.05;
-    white-space: nowrap;
+    line-height: 1.1;
+    white-space: normal;
+    word-wrap: break-word;
   }
 
   .hero h1 .accent {
