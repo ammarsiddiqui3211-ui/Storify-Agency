@@ -1103,9 +1103,9 @@ footer {
   display: inline-block;
   width: 6px;
   height: 6px;
-  background: #4ade80;
+  background: var(--blue-bright);
   border-radius: 50%;
-  box-shadow: 0 0 8px #4ade80;
+  box-shadow: 0 0 8px var(--blue-bright);
 }
 
 /* Clean uniform card display matching hang-tag / swatch tag design */
