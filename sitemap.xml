@@ -1,64 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<?xml-stylesheet type="text/xsl" href="/download/a23db4978-d4ed43445/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-<url>
-  <loc>https://storify.services/</loc>
-  <lastmod>2026-05-31</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>1.00</priority>
-</url>
-
-<url>
-  <loc>https://storify.services/about.html</loc>
-  <lastmod>2026-05-31</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.90</priority>
-</url>
-
-<url>
-  <loc>https://storify.services/services/design.html</loc>
-  <lastmod>2026-05-27</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.90</priority>
-</url>
-
-<url>
-  <loc>https://storify.services/services/development.html</loc>
-  <lastmod>2026-05-27</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.90</priority>
-</url>
-
-<url>
-  <loc>https://storify.services/services/marketing.html</loc>
-  <lastmod>2026-05-27</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.90</priority>
-</url>
-
-<url>
-  <loc>https://storify.services/services/social-media.html</loc>
-  <lastmod>2026-05-27</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.90</priority>
-</url>
-
-<url>
-  <loc>https://storify.services/services/ecommerce.html</loc>
-  <lastmod>2026-05-27</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.90</priority>
-</url>
-
-<url>
-  <loc>https://storify.services/services/all-in-one-package.html</loc>
-  <lastmod>2026-05-27</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.95</priority>
-</url>
-
+  <url>
+       <loc>https://storify.services/</loc>
+       <lastmod>2026-07-12T12:14:54+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>1.0000</priority>
+  </url>
+  <url>
+       <loc>https://storify.services/sitemap.xml</loc>
+       <lastmod>2026-07-12T12:14:54+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://storify.services/services.html</loc>
+       <lastmod>2026-07-12T12:14:54+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://storify.services/services/design.html</loc>
+       <lastmod>2026-07-12T12:14:54+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://storify.services/services/development.html</loc>
+       <lastmod>2026-07-12T12:14:54+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://storify.services/services/marketing.html</loc>
+       <lastmod>2026-07-12T12:14:54+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://storify.services/services/ecommerce.html</loc>
+       <lastmod>2026-07-12T12:14:54+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://storify.services/services/social-media.html</loc>
+       <lastmod>2026-07-12T12:14:54+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://storify.services/services/all-in-one-package.html</loc>
+       <lastmod>2026-07-12T12:14:54+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://storify.services/why-us.html</loc>
+       <lastmod>2026-07-12T12:14:54+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://storify.services/projects.html</loc>
+       <lastmod>2026-07-12T12:14:54+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://storify.services/testimonials.html</loc>
+       <lastmod>2026-07-12T12:14:54+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://storify.services/about.html</loc>
+       <lastmod>2026-07-12T12:14:54+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://storify.services/blog.html</loc>
+       <lastmod>2026-07-12T12:14:54+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://storify.services/contact.html</loc>
+       <lastmod>2026-07-12T12:14:54+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
 </urlset>
