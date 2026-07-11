@@ -353,7 +353,7 @@ nav.scrolled {
   background: transparent !important;
   box-shadow: none !important;
   border: none !important;
-  transition: all 0.2s ease !important;
+  transition: none !important;
   letter-spacing: normal !important;
   text-transform: none !important;
   position: relative !important;
@@ -363,7 +363,6 @@ nav.scrolled {
 .dropdown-menu a:hover {
   color: var(--white) !important;
   background: rgba(76, 124, 255, 0.15) !important;
-  transform: translateX(4px) !important;
 }
 
 
