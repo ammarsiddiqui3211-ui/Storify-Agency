@@ -1,0 +1,10 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/home", "destination": "/index.html" }
+  ],
+  "redirects": [
+    { "source": "/index", "destination": "/home", "statusCode": 301 },
+    { "source": "/index.html", "destination": "/home", "statusCode": 301 }
+  ]
+}
