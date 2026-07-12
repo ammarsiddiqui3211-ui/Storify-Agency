@@ -30,7 +30,31 @@ body {
   font-family: 'Inter', sans-serif;
   color: var(--text);
   background: var(--black);
-  overflow-x: hidden
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: var(--blue) rgba(10, 10, 15, 0.6);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(10, 10, 15, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--blue-bright) 0%, var(--blue) 50%, var(--blue-dark) 100%);
+  border-radius: 8px;
+  border: 1px solid rgba(96, 165, 250, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--blue-bright) 0%, var(--blue-light) 50%, var(--blue) 100%);
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.5);
 }
 
 /* INTRO */
