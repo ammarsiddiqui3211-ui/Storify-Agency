@@ -1078,6 +1078,10 @@ footer {
 
 
 
+  .cta-band {
+    padding: 4.5rem 1rem !important;
+  }
+
   .cta-box {
     padding: 3rem 1.5rem;
     border-radius: 18px;
@@ -1089,6 +1093,11 @@ footer {
 
   .cta-actions a {
     width: 100%;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 }
 
