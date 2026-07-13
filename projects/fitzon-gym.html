@@ -53,6 +53,17 @@
   </script>
   <style>
     /* Unique Page-Specific Styles for Case Study Details matching Blog Design */
+    .blog-detail-content {
+      background: var(--black);
+      padding: 60px 0 100px;
+    }
+
+    .blog-container {
+      max-width: none;
+      margin: 0 auto;
+      padding: 0 3rem;
+    }
+
     .featured-image-wrap img {
       width: 100%;
       height: 100%;
@@ -163,6 +174,9 @@
     }
 
     @media (max-width: 768px) {
+      .blog-container {
+        padding: 0 1.5rem;
+      }
       .author-card {
         flex-direction: column;
         text-align: center;
