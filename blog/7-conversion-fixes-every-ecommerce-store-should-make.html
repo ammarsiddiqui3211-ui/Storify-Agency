@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7 Conversion Fixes Every eCommerce Store Should Make | Storify</title>
+  <meta name="description"
+    content="Learn the 7 critical conversion rate optimization (CRO) fixes every eCommerce store should implement to increase sales, trust, and Shopify storefront performance.">
+  <meta name="keywords"
+    content="ecommerce conversion rate optimization, Shopify store CRO, custom checkout optimization, shopping cart trust badges, eCommerce layout design, Storify Agency">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Storify Agency">
+  <link rel="canonical" href="https://storify.services/blog/7-conversion-fixes-every-ecommerce-store-should-make.html">
+  <meta property="og:type" content="article">
+  <meta property="og:url"
+    content="https://storify.services/blog/7-conversion-fixes-every-ecommerce-store-should-make.html">
+  <meta property="og:title" content="7 Conversion Fixes Every eCommerce Store Should Make | Storify">
+  <meta property="og:description"
+    content="Learn the 7 critical conversion rate optimization (CRO) fixes every eCommerce store should implement to increase sales, trust, and Shopify storefront performance.">
+  <meta property="og:image" content="https://storify.services/images/blogs/Convertion.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="7 Conversion Fixes Every eCommerce Store Should Make | Storify">
+  <meta name="twitter:description"
+    content="Learn the 7 critical conversion rate optimization (CRO) fixes every eCommerce store should implement to increase sales, trust, and Shopify storefront performance.">
+  <meta name="twitter:image" content="https://storify.services/images/blogs/Convertion.jpeg">
+  <link rel="icon" type="image/png" href="../images/favicon/logo.png">
+  <link rel="sitemap" type="application/xml" href="https://storify.services/sitemap.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    /* Page-Specific Styles for Blog Detail Page */
+    .blog-detail-hero {
+      min-height: 55vh;
+      background:
+        radial-gradient(circle at 10% 20%, rgba(37, 99, 235, 0.14), transparent 35%),
+        radial-gradient(circle at 90% 70%, rgba(6, 182, 212, 0.08), transparent 30%),
+        linear-gradient(180deg, var(--dark), var(--black));
+      padding-top: 140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .breadcrumb {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .breadcrumb a {
+      color: var(--blue-bright);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .breadcrumb a:hover {
+      color: var(--white);
+    }
+
+    .blog-meta-info {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 1.5rem;
+      font-weight: 500;
+    }
+
+    .blog-meta-info span i {
+      color: var(--blue-bright);
+      margin-right: 6px;
+    }
+
+    .blog-detail-content {
+      background: var(--black);
+      padding: 60px 0 100px;
+    }
+
+    .blog-container {
+      max-width: none;
+      margin: 0 auto;
+      padding: 0 3rem;
+    }
+
+    .featured-image-wrap {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto 3rem;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1.5px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 20px 50px rgba(37, 99, 235, 0.1);
+      aspect-ratio: 16/9;
+    }
+
+    .featured-image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .article-body {
+      font-size: 1.125rem;
+      line-height: 1.85;
+      color: var(--off-white);
+    }
+
+    .article-body p {
+      margin-bottom: 1.8rem;
+    }
+
+    .article-body h2 {
+      font-size: 1.8rem;
+      color: var(--white);
+      margin-top: 3rem;
+      margin-bottom: 1.25rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .article-body h3 {
+      font-size: 1.4rem;
+      color: var(--white);
+      margin-top: 2.2rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .article-body ul,
+    .article-body ol {
+      margin-bottom: 1.8rem;
+      padding-left: 1.5rem;
+    }
+
+    .article-body li {
+      margin-bottom: 0.8rem;
+      color: var(--off-white);
+    }
+
+    .article-body strong {
+      color: var(--white);
+    }
+
+    .callout-box {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(30, 58, 138, 0.15));
+      border-left: 4px solid var(--blue-bright);
+      border-radius: 0 16px 16px 0;
+      padding: 2rem;
+      margin: 2.5rem 0;
+      color: var(--white);
+      font-style: italic;
+    }
+
+    .callout-box p {
+      margin-bottom: 0;
+    }
+
+    .share-post {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 1.5rem 0;
+      margin-top: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .share-label {
+      font-weight: 700;
+      color: var(--white);
+      font-size: 0.95rem;
+    }
+
+    .share-buttons {
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .share-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .share-btn:hover {
+      background: var(--blue);
+      border-color: var(--blue);
+      color: var(--white);
+      transform: translateY(-2px);
+    }
+
+    .author-card {
+      background: var(--mid);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 20px;
+      padding: 2rem;
+      margin-top: 3.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .author-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+
+    .author-info h4 {
+      font-size: 1.1rem;
+      color: var(--white);
+      margin-bottom: 0.25rem;
+      font-weight: 700;
+    }
+
+    .author-role {
+      font-size: 0.85rem;
+      color: var(--blue-bright);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .author-bio {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .author-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+      }
+
+      .blog-detail-hero h1 {
+        font-size: 2.2rem !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="subpage">
+  <nav>
+    <a href="../index.html" class="logo" aria-label="Storify home">
+      <div class="logo-box">
+        <img src="../images/logo/logo.png" alt="Storify Logo">
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li class="dropdown">
+        <a href="../services.html" class="dropdown-trigger">Services <i
+            class="fas fa-chevron-down dropdown-arrow"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="../services/design.html">Design</a></li>
+          <li><a href="../services/development.html">Development</a></li>
+          <li><a href="../services/marketing.html">Marketing</a></li>
+          <li><a href="../services/ecommerce.html">eCommerce Solutions</a></li>
+          <li><a href="../services/social-media.html">Social Media</a></li>
+          <li><a href="../services/all-in-one-package.html">All-in-One Package</a></li>
+        </ul>
+      </li>
+      <li><a href="../why-us.html">Why Us</a></li>
+      <li><a href="../projects.html">Projects</a></li>
+      <li><a href="../testimonials.html">Testimonials</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../blog.html" class="active">Blog</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="../contact.html">Book a Call</a>
+    <div class="hamburger" role="button" tabindex="0" aria-label="Open mobile menu" onclick="toggleMenu()"
+      onkeydown="handleMenuKey(event)"><span></span><span></span><span></span></div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-close" role="button" tabindex="0" aria-label="Close mobile menu" onclick="toggleMenu()"
+      onkeydown="handleMenuKey(event)">&times;</div>
+    <div class="mobile-menu-logo">
+      <img src="../images/logo/Icon.png" alt="Storify Logo">
+    </div>
+    <ul>
+      <li><a href="../services.html" onclick="toggleMenu()">Services</a></li>
+      <li><a href="../why-us.html" onclick="toggleMenu()">Why Us</a></li>
+      <li><a href="../projects.html" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="../testimonials.html" onclick="toggleMenu()">Testimonials</a></li>
+      <li><a href="../about.html" onclick="toggleMenu()">About</a></li>
+      <li><a href="../blog.html" class="active" onclick="toggleMenu()">Blog</a></li>
+      <li><a href="../contact.html" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+    <div class="mobile-contact">
+      <div class="mobile-contact-info">
+        <a href="mailto:storify.store.co@gmail.com" onclick="toggleMenu()">storify.store.co@gmail.com</a>
+        <a href="tel:+923705639606" onclick="toggleMenu()">+92 370 5639606</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <header class="hero blog-detail-hero">
+      <div class="particles-bg" id="blogDetailHeroPart"></div>
+      <div class="hero-inner" style="max-width: 900px; padding: 0 24px;">
+        <div class="breadcrumb"><a href="../index.html">Home</a> / <a href="../blog.html">Blog</a> / <span
+            class="bc-full">7 Conversion Fixes</span><span class="bc-short">7 CRO Fixes</span></div>
+        <h1
+          style="font-size: 3rem; font-weight: 400; line-height: 1.15; letter-spacing: -0.03em; margin-bottom: 1rem; color: var(--white);">
+          7 Conversion Fixes Every eCommerce Store Should Make
+        </h1>
+        <div class="blog-meta-info">
+          <span><i class="far fa-calendar-alt"></i> 13/7/2026</span>
+          <span><i class="far fa-user"></i> By Ammar</span>
+          <span><i class="far fa-clock"></i> 6 min read</span>
+        </div>
+
+        <!-- Featured Image -->
+        <div class="featured-image-wrap reveal">
+          <img src="../images/blogs/Convertion.jpeg" alt="eCommerce Conversion Fixes">
+        </div>
+        <div class="hero-stats blog-hero-stats" style="justify-content: center; margin-top: 40px;">
+          <div class="stat">
+            <div class="stat-num">+45%</div>
+            <div class="stat-label">Conversion Boost</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">-18%</div>
+            <div class="stat-label">Cart Abandonment</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">+24%</div>
+            <div class="stat-label">Average Order Value</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">15+</div>
+            <div class="stat-label">Frictionless</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ARTICLE SECTION -->
+    <section class="blog-detail-content">
+      <div class="blog-container">
+
+
+
+        <!-- Article Body -->
+        <div class="blog-layout-grid">
+          <!-- Left Column: Main Content -->
+          <div class="blog-main-content">
+            <article class="article-body">
+              <p>
+                Driving paid or search traffic to your online store is only half the battle. If your storefront suffers
+                from conversion leaks, you are essentially throwing your marketing budget down a leaky bucket.
+              </p>
+              <p>
+                Conversion Rate Optimization (CRO) is the highest leverage strategy for eCommerce founders. By raising
+                your conversion rate from 1.5% to 3.0%, you effectively double your sales and halve your customer
+                acquisition cost without spending an extra dime on ads.
+              </p>
+              <p>
+                Here are <strong>7 critical conversion fixes</strong> you should implement on your store today.
+              </p>
+
+              <div class="scope-timeline">
+
+                <div class="scope-timeline-row reveal">
+                  <div class="scope-node-wrap">
+                    <div class="scope-node">1</div>
+                  </div>
+                  <div class="scope-content">
+                    <h2>1. Establish Visual Hierarchy Above the Fold</h2>
+                    <p>
+                      When a visitor lands on your product page, they should immediately understand what the product is,
+                      how much it costs, why they need it, and how to buy it. Keep your product title, reviews star
+                      count, price, select options, and the "Add to Cart" button visible on mobile screens without
+                      requiring any scrolling.
+                    </p>
+                  </div>
+                </div>
+                <div class="scope-timeline-row reveal">
+                  <div class="scope-node-wrap">
+                    <div class="scope-node">2</div>
+                  </div>
+                  <div class="scope-content">
+                    <h2>2. Place Trust Signals Right Next to the Checkout</h2>
+                    <p>
+                      Purchasing anxiety is a real barrier. Reduce it by placing trust badges (such as secure checkout
+                      icons, 100% satisfaction guarantees, or free returns logos) directly below or next to the main
+                      Call-to-Action (CTA) button.
+                    </p>
+
+                    <div class="callout-box">
+                      <p>
+                        "Micro-trust badges placed right below the 'Buy Now' button can increase conversion rates by up
+                        to 15% by neutralizing security doubts at the exact moment of decision."
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="scope-timeline-row reveal">
+                  <div class="scope-node-wrap">
+                    <div class="scope-node">3</div>
+                  </div>
+                  <div class="scope-content">
+                    <h2>3. Optimize Product Media for Scannability</h2>
+                    <p>
+                      Shoppers cannot touch or feel your product. Ensure your media gallery includes high-definition
+                      zoomable photos, lifestyle shots showing the product in use, and brief 10-second user-generated
+                      videos showing the item from multiple angles.
+                    </p>
+                  </div>
+                </div>
+                <div class="scope-timeline-row reveal">
+                  <div class="scope-node-wrap">
+                    <div class="scope-node">4</div>
+                  </div>
+                  <div class="scope-content">
+                    <h2>4. Create a Dedicated FAQ Section on Product Pages</h2>
+                    <p>
+                      Instead of forcing visitors to navigate to a generic FAQ page, put product-specific FAQs directly
+                      on the product detail page. Address sizing questions, shipping times, return policies, and
+                      specifications where the user is already browsing.
+                    </p>
+                  </div>
+                </div>
+                <div class="scope-timeline-row reveal">
+                  <div class="scope-node-wrap">
+                    <div class="scope-node">5</div>
+                  </div>
+                  <div class="scope-content">
+                    <h2>5. Integrate Express One-Tap Checkouts</h2>
+                    <p>
+                      Minimize form friction by enabling express payment gateways such as Shop Pay, Apple Pay, Google
+                      Pay, and PayPal. These buttons allow returning shoppers to securely bypass the standard multi-step
+                      checkout form in a single tap.
+                    </p>
+                  </div>
+                </div>
+                <div class="scope-timeline-row reveal">
+                  <div class="scope-node-wrap">
+                    <div class="scope-node">6</div>
+                  </div>
+                  <div class="scope-content">
+                    <h2>6. Build an Interactive Drawer Cart</h2>
+                    <p>
+                      Replace the default page redirection cart with a slide-out drawer cart. Add a dynamic free
+                      shipping threshold bar inside the drawer cart (e.g., "Add $15 more to unlock Free Shipping") to
+                      naturally boost your Average Order Value (AOV).
+                    </p>
+                  </div>
+                </div>
+                <div class="scope-timeline-row reveal">
+                  <div class="scope-node-wrap">
+                    <div class="scope-node">7</div>
+                  </div>
+                  <div class="scope-content">
+                    <h2>7. Optimize Page Loading Speed</h2>
+                    <p>
+                      For every second your site takes to load, conversions drop by approximately 10%. Compress your
+                      storefront images to WebP format, eliminate unused JavaScript trackers, and use a lightweight,
+                      modern Shopify theme layout.
+                    </p>
+
+                    <p>
+                      If you want to maximize your eCommerce conversion rates, the team at <strong>Storify</strong> can
+                      conduct a full CRO audit on your Shopify store and implement these fixes directly. <a
+                        href="../contact.html"
+                        style="color: var(--blue-bright); font-weight: 700; text-decoration: underline;">Book a free
+                        consult call with us today</a>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Author Card -->
+            <div class="author-card">
+              <div class="author-avatar">A</div>
+              <div class="author-info">
+                <h4>Ammar Siddiqui</h4>
+                <div class="author-role">Founder & CEO, Storify</div>
+                <p class="author-bio">
+                  Ammar has helped scale over 150 eCommerce brands globally. He specializes in conversion rate
+                  optimization (CRO), high-volume Shopify development, and performance marketing strategy.
+                </p>
+              </div>
+            </div>
+
+            <!-- Share Post Card Panel -->
+            <div class="share-card-panel">
+              <div class="share-card-glow"></div>
+
+              <div class="share-card-body">
+                <div class="share-card-left">
+                  <div class="share-icon-badge">
+                    <i class="fas fa-share-alt"></i>
+                  </div>
+                  <div class="share-card-text">
+                    <h4 class="share-card-title">Found this useful?</h4>
+                    <p class="share-card-subtitle">Share it with someone who's scaling their store.</p>
+                  </div>
+                </div>
+
+                <div class="share-card-right">
+                  <div class="share-grid-row">
+                    <a href="https://twitter.com/share?url=https://storify.services/blog/7-conversion-fixes-every-ecommerce-store-should-make&text=7%20Conversion%20Fixes%20Every%20eCommerce%20Store%20Should%20Make"
+                      target="_blank" rel="noopener noreferrer" class="share-grid-item" aria-label="Share on X">
+                      <div class="share-icon-box x-color">
+                        <i class="fab fa-x-twitter"></i>
+                      </div>
+                      <span class="share-icon-label">X</span>
+                    </a>
+
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://storify.services/blog/7-conversion-fixes-every-ecommerce-store-should-make"
+                      target="_blank" rel="noopener noreferrer" class="share-grid-item" aria-label="Share on Facebook">
+                      <div class="share-icon-box fb-color">
+                        <i class="fab fa-facebook-f"></i>
+                      </div>
+                      <span class="share-icon-label">Facebook</span>
+                    </a>
+
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://storify.services/blog/7-conversion-fixes-every-ecommerce-store-should-make"
+                      target="_blank" rel="noopener noreferrer" class="share-grid-item" aria-label="Share on LinkedIn">
+                      <div class="share-icon-box li-color">
+                        <i class="fab fa-linkedin-in"></i>
+                      </div>
+                      <span class="share-icon-label">LinkedIn</span>
+                    </a>
+
+                    <a href="https://api.whatsapp.com/send?text=7%20Conversion%20Fixes%20Every%20eCommerce%20Store%20Should%20Make%20https://storify.services/blog/7-conversion-fixes-every-ecommerce-store-should-make"
+                      target="_blank" rel="noopener noreferrer" class="share-grid-item whatsapp-item"
+                      aria-label="Share on WhatsApp">
+                      <div class="share-icon-box wa-color">
+
+                        <i class="fab fa-whatsapp"></i>
+                      </div>
+                      <span class="share-icon-label">WhatsApp</span>
+                    </a>
+
+                    <a href="https://pinterest.com/pin/create/button/?url=https://storify.services/blog/7-conversion-fixes-every-ecommerce-store-should-make&description=7%20Conversion%20Fixes%20Every%20eCommerce%20Store%20Should%20Make"
+                      target="_blank" rel="noopener noreferrer" class="share-grid-item" aria-label="Share on Pinterest">
+                      <div class="share-icon-box pin-color">
+                        <i class="fab fa-pinterest-p"></i>
+                      </div>
+                      <span class="share-icon-label">Pinterest</span>
+                    </a>
+
+                    <a href="mailto:?subject=7%20Conversion%20Fixes%20Every%20eCommerce%20Store%20Should%20Make&body=Check%20this%20out:%20https://storify.services/blog/7-conversion-fixes-every-ecommerce-store-should-make"
+                      class="share-grid-item" aria-label="Share via Email">
+                      <div class="share-icon-box email-color">
+                        <i class="far fa-envelope"></i>
+                      </div>
+                      <span class="share-icon-label">Email</span>
+                    </a>
+                    <a href="javascript:void(0)" class="share-grid-item" aria-label="Copy Link"
+                      onclick="copyArticleLink(this, 'https://storify.services/blog/7-conversion-fixes-every-ecommerce-store-should-make')">
+                      <div class="share-icon-box copy-color">
+                        <i class="fas fa-link"></i>
+                      </div>
+                      <span class="share-icon-label">Copy</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+                      <div class="blog-bottom-related">
+          <h3 class="related-bottom-title">Related Articles</h3>
+          <div class="projects-grid">
+          <a class="project-card reveal" href="how-to-turn-product-pages-into-silent-salespeople.html">
+            <div class="project-thumb"><img src="../images/blogs/Product Page.jpg" alt="How to Turn Product Pages Into Silent Salespeople"></div>
+            <div class="project-body">
+              <h3>How to Turn Product Pages Into Silent Salespeople</h3>
+              <p>Benefit-led copy, comparison cues, social proof, and friction-free CTAs that help shoppers choose.</p>
+              <div class="project-tags"><span class="proj-tag">Strategy</span><span class="proj-tag">Copy</span></div>
+            </div>
+          </a>
+          <a class="project-card reveal" href="ad-funnel-checklist-before-scaling-spend.html">
+            <div class="project-thumb"><img src="../images/blogs/Ads Funnel.jpg" alt="The Ad Funnel Checklist We Use Before Scaling Spend"></div>
+            <div class="project-body">
+              <h3>The Ad Funnel Checklist We Use Before Scaling Spend</h3>
+              <p>Pre-launch checks for creative angles, landing pages, remarketing, and offer clarity.</p>
+              <div class="project-tags"><span class="proj-tag">Marketing</span><span class="proj-tag">Ads</span></div>
+            </div>
+          </a>
+          <a class="project-card reveal" href="seo-optimizations-that-drive-organic-growth.html">
+            <div class="project-thumb"><img src="../images/blogs/SEO.webp" alt="SEO Optimizations That Drive Organic Growth"></div>
+            <div class="project-body">
+              <h3>SEO Optimizations That Drive Organic Growth</h3>
+              <p>Technical fixes, structured content, and on-page improvements to increase discoverability.</p>
+              <div class="project-tags"><span class="proj-tag">SEO</span><span class="proj-tag">Organic</span></div>
+            </div>
+          </a>
+          <a class="project-card reveal" href="content-strategy-turn-blog-readers-into-buyers.html">
+            <div class="project-thumb"><img src="../images/blogs/content strategy.jpg" alt="The Content Strategy That Turns Blog Readers Into Buyers"></div>
+            <div class="project-body">
+              <h3>The Content Strategy That Turns Blog Readers Into Buyers</h3>
+              <p>How to design informational content that builds brand authority and naturally guides users to checkout.</p>
+              <div class="project-tags"><span class="proj-tag">Content</span><span class="proj-tag">Marketing</span></div>
+            </div>
+          </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band" style="background: var(--dark); padding: 96px 6% 96px;">
+      <div class="cta-box" style="margin: 0 auto; grid-template-columns: 1fr; text-align: center; gap: 2rem;">
+        <div class="cta-content" style="max-width: 100%;">
+          <div class="cta-label" style="margin: 0 auto 1.5rem;">Never Miss an Update</div>
+          <h2 class="cta-h2" style="margin-bottom: 1.5rem;">Want customized growth advice?</h2>
+          <p class="cta-sub" style="margin: 0 auto 2.5rem; text-align: center;">Book a call to discuss how these
+            strategies can be customized and implemented for your Shopify storefront.</p>
+          <div class="cta-actions" style="justify-content: center; gap: 1rem;">
+            <a href="../contact.html" class="btn-primary">
+              Book a Free Consultation
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M3 7h8M7.5 3.5l4 3.5-4 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="https://wa.me/923705639606" class="btn-ghost" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-whatsapp"></i>
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <div class="footer-logo-box">
+            <img src="../images/logo/logo.png" alt="Storify Logo">
+          </div>
+        </div>
+        <p class="footer-about">Pakistan's all-in-one eCommerce agency. We build, grow, and scale online stores with
+          expert strategy, design, and marketing.</p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/storifyecommerce" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1V12h3v3h-3v6.8c4.56-.93 8-4.96 8-9.8z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/storify.agency/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              </svg>
+            </a>
+            <a href="https://www.tiktok.com/@storifyagency" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.02 1.59 4.23.86 1.07 2.05 1.83 3.37 2.19v3.83c-1.63-.04-3.23-.55-4.6-1.42-.51-.33-.97-.73-1.37-1.18v6.79c-.06 2.45-1.25 4.79-3.27 6.13-1.92 1.28-4.43 1.63-6.66.93-2.12-.66-3.92-2.22-4.83-4.22C-.23 14.7.2 11.75 1.94 9.69c1.65-1.96 4.22-2.92 6.74-2.52v3.86c-1.38-.45-2.91-.05-3.89.96-.86.88-1.12 2.22-.64 3.37.49 1.16 1.68 1.91 2.94 1.83 1.54-.01 2.87-1.19 3.07-2.72.07-1.01.03-2.02.04-3.03V0h2.325z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/storify-market/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/923705639606" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </a>
+          </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="../services/design.html">Design</a></li>
+          <li><a href="../services/development.html">Development</a></li>
+          <li><a href="../services/marketing.html">Marketing</a></li>
+          <li><a href="../services/social-media.html">Social Media</a></li>
+          <li><a href="../services/ecommerce.html">eCommerce</a></li>
+          <li><a href="../blog.html" class="active">Growth Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a
+              href="mailto:storify.store.co@gmail.com?subject=Free%20Consultation%20Request">storify.store.co@gmail.com</a>
+          </li>
+          <li><a href="tel:03705639606">0370 5639606</a></li>
+          <li><a href="https://wa.me/923705639606" target="_blank" rel="noopener noreferrer">WhatsApp Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Storify. All rights reserved.</span>
+      <span>Built for eCommerce Growth</span>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('mobileMenu');
+      if (!menu) return;
+      menu.classList.toggle('open');
+      var isOpen = menu.classList.contains('open');
+      menu.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    }
+
+    function handleMenuKey(event) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        toggleMenu();
+      }
+    }
+
+    window.addEventListener('scroll', function () {
+      var nav = document.querySelector('nav');
+      if (nav) {
+        nav.classList.toggle('scrolled', window.scrollY > 50);
+      }
+    });
+
+    function makeParticles(id, n) {
+      var c = document.getElementById(id);
+      if (!c) return;
+      for (var i = 0; i < n; i++) {
+        var p = document.createElement('div');
+        p.className = 'particle';
+        p.style.cssText = 'left:' + Math.random() * 100 + '%;animation-duration:' + (6 + Math.random() * 12) + 's;animation-delay:' + Math.random() * 10 + 's;opacity:' + (0.1 + Math.random() * 0.35);
+        c.appendChild(p);
+      }
+    }
+
+    function initReveal() {
+      var els = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        var obs = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e, i) {
+            if (e.isIntersecting) {
+              setTimeout(function () { e.target.classList.add('visible'); }, i * 70);
+            }
+          });
+        }, { threshold: 0.1 });
+        els.forEach(function (el) { obs.observe(el); });
+      } else {
+        els.forEach(function (el) { el.classList.add('visible'); });
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', function () {
+      makeParticles('blogDetailHeroPart', 38);
+      initReveal();
+      // Scroll-spy for Table of Contents
+      var tocLinks = document.querySelectorAll('.toc-list a');
+      var headings = document.querySelectorAll('.article-body h2');
+      if (tocLinks.length > 0 && headings.length > 0) {
+        var activeIndex = 0;
+        window.addEventListener('scroll', function () {
+          var scrollPos = window.scrollY + 150; // offset for active heading
+          for (var i = 0; i < headings.length; i++) {
+            if (headings[i].offsetTop <= scrollPos) {
+              activeIndex = i;
+            }
+          }
+          tocLinks.forEach(function (link, index) {
+            link.classList.toggle('active', index === activeIndex);
+          });
+        });
+      }
+    });
+
+    function copyArticleLink(el, url) {
+      navigator.clipboard.writeText(url).then(function () {
+        var label = el.querySelector('.share-icon-label');
+        var iconBox = el.querySelector('.share-icon-box');
+        if (label) {
+          var orig = label.textContent;
+          label.textContent = 'Copied!';
+          if (iconBox) iconBox.classList.add('copied');
+          setTimeout(function () {
+            label.textContent = orig;
+            if (iconBox) iconBox.classList.remove('copied');
+          }, 2000);
+        }
+      }).catch(function (err) {
+        console.error('Could not copy: ', err);
+      });
+    }
+
+  </script>
+  <script src="../cursor.js"></script>
+</body>
+
+</html>
