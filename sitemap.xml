@@ -4,62 +4,144 @@
 
   <url>
        <loc>https://storify.services/</loc>
-       <lastmod>2026-07-12T18:11:25+00:00</lastmod>
+       <lastmod>2026-07-13T15:10:00+00:00</lastmod>
        <changefreq>daily</changefreq>
        <priority>1.0000</priority>
   </url>
   <url>
-       <loc>https://storify.services/blog/why-storify-agency.html</loc>
-       <lastmod>2026-07-12T18:11:25+00:00</lastmod>
+       <loc>https://storify.services/services.html</loc>
+       <lastmod>2026-07-13T15:10:00+00:00</lastmod>
        <changefreq>monthly</changefreq>
        <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://storify.services/why-us.html</loc>
+       <lastmod>2026-07-13T15:10:00+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://storify.services/projects.html</loc>
+       <lastmod>2026-07-13T15:10:00+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://storify.services/testimonials.html</loc>
+       <lastmod>2026-07-13T15:10:00+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://storify.services/about.html</loc>
+       <lastmod>2026-07-13T15:10:00+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://storify.services/blog.html</loc>
+       <lastmod>2026-07-13T15:10:00+00:00</lastmod>
+       <changefreq>weekly</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://storify.services/contact.html</loc>
+       <lastmod>2026-07-13T15:10:00+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.8000</priority>
+  </url>
+
+  <!-- Service Subpages -->
+  <url>
+       <loc>https://storify.services/services/design.html</loc>
+       <lastmod>2026-07-13T15:10:00+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.7000</priority>
+  </url>
+  <url>
+       <loc>https://storify.services/services/development.html</loc>
+       <lastmod>2026-07-13T15:10:00+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.7000</priority>
+  </url>
+  <url>
+       <loc>https://storify.services/services/marketing.html</loc>
+       <lastmod>2026-07-13T15:10:00+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.7000</priority>
+  </url>
+  <url>
+       <loc>https://storify.services/services/ecommerce.html</loc>
+       <lastmod>2026-07-13T15:10:00+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.7000</priority>
+  </url>
+  <url>
+       <loc>https://storify.services/services/social-media.html</loc>
+       <lastmod>2026-07-13T15:10:00+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.7000</priority>
+  </url>
+  <url>
+       <loc>https://storify.services/services/all-in-one-package.html</loc>
+       <lastmod>2026-07-13T15:10:00+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.7000</priority>
+  </url>
+
+  <!-- Blog Posts -->
+  <url>
+       <loc>https://storify.services/blog/why-storify-agency.html</loc>
+       <lastmod>2026-07-13T15:10:00+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.6000</priority>
   </url>
   <url>
        <loc>https://storify.services/blog/omnichannel-ad-funnel-checklist.html</loc>
-       <lastmod>2026-07-12T18:11:25+00:00</lastmod>
+       <lastmod>2026-07-13T15:10:00+00:00</lastmod>
        <changefreq>monthly</changefreq>
-       <priority>0.8000</priority>
+       <priority>0.6000</priority>
   </url>
   <url>
        <loc>https://storify.services/blog/7-conversion-fixes-every-ecommerce-store-should-make.html</loc>
-       <lastmod>2026-07-13T01:17:00+00:00</lastmod>
+       <lastmod>2026-07-13T15:10:00+00:00</lastmod>
        <changefreq>monthly</changefreq>
-       <priority>0.8000</priority>
+       <priority>0.6000</priority>
   </url>
   <url>
        <loc>https://storify.services/blog/how-to-turn-product-pages-into-silent-salespeople.html</loc>
-       <lastmod>2026-07-13T01:17:00+00:00</lastmod>
+       <lastmod>2026-07-13T15:10:00+00:00</lastmod>
        <changefreq>monthly</changefreq>
-       <priority>0.8000</priority>
+       <priority>0.6000</priority>
   </url>
   <url>
        <loc>https://storify.services/blog/ad-funnel-checklist-before-scaling-spend.html</loc>
-       <lastmod>2026-07-13T01:17:00+00:00</lastmod>
+       <lastmod>2026-07-13T15:10:00+00:00</lastmod>
        <changefreq>monthly</changefreq>
-       <priority>0.8000</priority>
+       <priority>0.6000</priority>
   </url>
   <url>
        <loc>https://storify.services/blog/seo-optimizations-that-drive-organic-growth.html</loc>
-       <lastmod>2026-07-13T01:17:00+00:00</lastmod>
+       <lastmod>2026-07-13T15:10:00+00:00</lastmod>
        <changefreq>monthly</changefreq>
-       <priority>0.8000</priority>
+       <priority>0.6000</priority>
   </url>
   <url>
        <loc>https://storify.services/blog/content-strategy-turn-blog-readers-into-buyers.html</loc>
-       <lastmod>2026-07-13T01:17:00+00:00</lastmod>
+       <lastmod>2026-07-13T15:10:00+00:00</lastmod>
        <changefreq>monthly</changefreq>
-       <priority>0.8000</priority>
+       <priority>0.6000</priority>
   </url>
   <url>
        <loc>https://storify.services/blog/checkout-redesign-faster-conversions.html</loc>
-       <lastmod>2026-07-13T01:17:00+00:00</lastmod>
+       <lastmod>2026-07-13T15:10:00+00:00</lastmod>
        <changefreq>monthly</changefreq>
-       <priority>0.8000</priority>
+       <priority>0.6000</priority>
   </url>
   <url>
        <loc>https://storify.services/sitemap.xml</loc>
-       <lastmod>2026-07-12T18:11:25+00:00</lastmod>
+       <lastmod>2026-07-13T15:10:00+00:00</lastmod>
        <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+       <priority>0.5000</priority>
   </url>
 </urlset>
