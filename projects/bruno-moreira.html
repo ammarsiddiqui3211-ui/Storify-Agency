@@ -115,34 +115,6 @@
       margin-bottom: 0;
     }
 
-    /* Horizontal Grid layout for Results Section list */
-    .results-list-horizontal {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-      list-style: none;
-      padding-left: 0 !important;
-      margin-top: 1.8rem;
-      margin-bottom: 1.8rem;
-    }
-
-    .results-list-horizontal li {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      border-radius: 16px;
-      padding: 1.5rem;
-      font-size: 0.95rem;
-      line-height: 1.6;
-      margin-bottom: 0 !important;
-      color: var(--off-white);
-      transition: transform 0.3s ease, border-color 0.3s ease;
-    }
-
-    .results-list-horizontal li:hover {
-      transform: translateY(-2px);
-      border-color: rgba(96, 165, 250, 0.25);
-    }
-
     .author-card {
       background: var(--mid);
       border: 1px solid rgba(255, 255, 255, 0.06);
@@ -191,10 +163,6 @@
     }
 
     @media (max-width: 768px) {
-      .results-list-horizontal {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-      }
       .author-card {
         flex-direction: column;
         text-align: center;
@@ -363,7 +331,7 @@
                   <p>
               Our organic growth strategy delivered massive milestones in under 30 days:
             </p>
-            <ul class="results-list-horizontal">
+            <ul>
               <li>Followers grew from <strong>1,000 to over 7,000</strong> purely organically.</li>
               <li>Secured over <strong>350,000 blended views</strong> across his top 5 Reels.</li>
               <li><strong>Blended engagement rate spiked by +420%</strong>, driving a high volume of direct messages and profile inquiries.</li>

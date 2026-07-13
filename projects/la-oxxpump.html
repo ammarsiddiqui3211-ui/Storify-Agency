@@ -115,34 +115,6 @@
       margin-bottom: 0;
     }
 
-    /* Horizontal Grid layout for Results Section list */
-    .results-list-horizontal {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-      list-style: none;
-      padding-left: 0 !important;
-      margin-top: 1.8rem;
-      margin-bottom: 1.8rem;
-    }
-
-    .results-list-horizontal li {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      border-radius: 16px;
-      padding: 1.5rem;
-      font-size: 0.95rem;
-      line-height: 1.6;
-      margin-bottom: 0 !important;
-      color: var(--off-white);
-      transition: transform 0.3s ease, border-color 0.3s ease;
-    }
-
-    .results-list-horizontal li:hover {
-      transform: translateY(-2px);
-      border-color: rgba(96, 165, 250, 0.25);
-    }
-
     .author-card {
       background: var(--mid);
       border: 1px solid rgba(255, 255, 255, 0.06);
@@ -191,10 +163,6 @@
     }
 
     @media (max-width: 768px) {
-      .results-list-horizontal {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-      }
       .author-card {
         flex-direction: column;
         text-align: center;
@@ -363,7 +331,7 @@
                   <p>
               The creative rebrand unlocked a surge in local digital awareness and member inquiries:
             </p>
-            <ul class="results-list-horizontal">
+            <ul>
               <li><strong>+120% expansion in organic content reach</strong> within 30 days.</li>
               <li><strong>85% increase in direct message queries</strong> requesting membership pricing and package enrollments.</li>
               <li><strong>48% increase in external link and profile clicks</strong>, leading to higher website traffic.</li>
