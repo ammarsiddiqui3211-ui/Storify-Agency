@@ -1432,7 +1432,7 @@ section {
 /* PROJECTS */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 22px;
   margin-top: 56px
 }
@@ -4347,100 +4347,61 @@ h4,
 
 .share-grid-item {
   display: flex !important;
-  flex-direction: column !important;
   align-items: center !important;
-  gap: 0.5rem !important;
+  justify-content: center !important;
   text-decoration: none !important;
-  transition: transform 0.2s !important;
+  transition: transform 200ms ease !important;
   cursor: pointer !important;
 }
 
 .share-grid-item:hover {
-  transform: translateY(-3px) !important;
+  transform: translateY(-2px) !important;
 }
 
 .share-icon-box {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #12121e 0%, #0c0c12 100%);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.15rem;
-  color: var(--muted, #6b6b88);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03), 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  position: relative;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  color: #3b82f6 !important;
+  border: 1px solid rgba(255, 255, 255, 0.04) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 1rem !important;
+  box-shadow: none !important;
+  transition: background-color 200ms ease, color 200ms ease, transform 200ms ease !important;
+  position: relative !important;
 }
 
-/* Brand hover colors & glows */
 .share-grid-item:hover .share-icon-box {
-  border-color: currentColor;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
-}
-
-.share-grid-item:hover .share-icon-box.x-color {
-  color: var(--white, #ffffff) !important;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15) !important;
-}
-
-.share-grid-item:hover .share-icon-box.fb-color {
-  color: #1877F2 !important;
-  box-shadow: 0 0 15px rgba(24, 119, 242, 0.3) !important;
-}
-
-.share-grid-item:hover .share-icon-box.li-color {
-  color: #0A66C2 !important;
-  box-shadow: 0 0 15px rgba(10, 102, 194, 0.3) !important;
-}
-
-.share-grid-item:hover .share-icon-box.wa-color {
-  color: #25D366 !important;
-  box-shadow: 0 0 15px rgba(37, 211, 102, 0.3) !important;
-}
-
-.share-grid-item:hover .share-icon-box.pin-color {
-  color: #BD081C !important;
-  box-shadow: 0 0 15px rgba(189, 8, 28, 0.3) !important;
-}
-
-.share-grid-item:hover .share-icon-box.email-color {
-  color: var(--white, #ffffff) !important;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15) !important;
+  background: #3b82f6 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.4) !important;
 }
 
 /* WhatsApp TOP badge */
 .whatsapp-item {
-  position: relative;
+  position: relative !important;
 }
 
 .share-top-badge {
-  position: absolute;
-  top: -8px;
-  right: -8px;
-  background: linear-gradient(135deg, var(--blue, #2563eb) 0%, var(--blue-bright, #60a5fa) 100%);
-  color: var(--white, #ffffff);
-  font-size: 0.55rem;
-  font-weight: 800;
-  padding: 0.15rem 0.4rem;
-  border-radius: 100px;
-  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.4);
-  letter-spacing: 0.02em;
-  z-index: 10;
+  position: absolute !important;
+  top: -6px !important;
+  right: -6px !important;
+  background: linear-gradient(135deg, var(--blue, #2563eb) 0%, var(--blue-bright, #60a5fa) 100%) !important;
+  color: var(--white, #ffffff) !important;
+  font-size: 0.55rem !important;
+  font-weight: 800 !important;
+  padding: 0.15rem 0.4rem !important;
+  border-radius: 100px !important;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.4) !important;
+  letter-spacing: 0.02em !important;
+  z-index: 10 !important;
 }
 
 .share-icon-label {
-  font-size: 0.725rem;
-  color: var(--muted, #6b6b88);
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  transition: color 0.2s;
-}
-
-.share-grid-item:hover .share-icon-label {
-  color: var(--white, #ffffff);
+  display: none !important;
 }
 
 /* Copy Link Badge — 7th share icon */
