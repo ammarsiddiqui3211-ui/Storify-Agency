@@ -764,7 +764,6 @@
             <input type="hidden" name="_subject" value="New Consultation Request!">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_next" value="https://storify.services/thanks.html">
-            <input type="hidden" name="_autoresponse" value="Thank you for reaching out to Storify Agency! We have received your inquiry. If you would like to schedule your consultation call immediately, please book a slot on our calendar: https://storify.services/thanks.html. Otherwise, our team will get back to you within 12 hours.">
 
             <label class="form-label" style="text-align: left;">Your Name</label>
             <input type="text" name="name" class="form-input" placeholder="Full name" id="fname" required>
@@ -1077,6 +1076,92 @@
         }
       }
     }
+
+    // AJAX Form Submission
+    document.addEventListener('DOMContentLoaded', function () {
+      var form = document.getElementById('contactForm');
+      if (!form) return;
+
+      // Create message element if it doesn't exist
+      var msgEl = form.querySelector('.form-message');
+      if (!msgEl) {
+        msgEl = document.createElement('div');
+        msgEl.className = 'form-message';
+        msgEl.style.marginTop = '1.05rem';
+        form.insertBefore(msgEl, form.querySelector('.submit-btn'));
+      }
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        var submitBtn = form.querySelector('.submit-btn');
+        var originalBtnHTML = submitBtn.innerHTML;
+
+        // Reset messages
+        msgEl.style.display = 'none';
+        msgEl.className = 'form-message';
+        msgEl.textContent = '';
+
+        // Disable button & show loading state
+        submitBtn.disabled = true;
+        submitBtn.style.opacity = '0.7';
+        submitBtn.style.cursor = 'not-allowed';
+        submitBtn.innerHTML = 'Reserving <i class="fas fa-spinner fa-spin" style="margin-left: 8px;"></i>';
+
+        // Get input values
+        var name = form.querySelector('[name="name"]').value;
+        var email = form.querySelector('[name="email"]').value;
+        var service = form.querySelector('[name="service"]').value || 'Not Specified';
+        var message = form.querySelector('[name="message"]').value;
+        var _subject = form.querySelector('[name="_subject"]') ? form.querySelector('[name="_subject"]').value : 'New Consultation Request!';
+        var _template = form.querySelector('[name="_template"]') ? form.querySelector('[name="_template"]').value : 'table';
+        var _captcha = form.querySelector('[name="_captcha"]') ? form.querySelector('[name="_captcha"]').value : 'false';
+
+        var payload = {
+          name: name,
+          email: email,
+          service: service,
+          message: message,
+          _subject: _subject,
+          _template: _template,
+          _captcha: _captcha
+        };
+
+        fetch('https://formsubmit.co/ajax/storify.store.co@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        })
+        .then(function (response) {
+          if (response.ok) {
+            return response.json();
+          } else {
+            throw new Error('Server error');
+          }
+        })
+        .then(function (data) {
+          var nextUrl = form.querySelector('[name="_next"]') ? form.querySelector('[name="_next"]').value : 'thanks.html';
+          window.location.href = nextUrl;
+        })
+        .catch(function (error) {
+          console.error('Error submitting form:', error);
+          
+          // Re-enable button
+          submitBtn.disabled = false;
+          submitBtn.style.opacity = '';
+          submitBtn.style.cursor = '';
+          submitBtn.innerHTML = originalBtnHTML;
+
+          // Show error message
+          msgEl.className = 'form-message error';
+          msgEl.textContent = 'Oops! Something went wrong. Please try again or contact us directly via WhatsApp.';
+          msgEl.style.display = 'block';
+        });
+      });
+    });
 
   </script>
   <script src="cursor.js"></script>
