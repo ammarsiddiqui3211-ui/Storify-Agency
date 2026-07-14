@@ -179,12 +179,11 @@
 
         <!-- Right Side: Form -->
         <div class="cta-form-container reveal stagger-3">
-          <form id="contactForm" class="booking-form" action="https://formsubmit.co/storify.store.co@gmail.com"
+          <form id="contactForm" class="booking-form" action="https://api.web3forms.com/submit"
             method="POST">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_subject" value="New Consultation Request!">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_next" value="https://storify.services/thanks.html">
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+            <input type="hidden" name="subject" value="New Consultation Request!">
+            <input type="hidden" name="redirect" value="https://storify.services/thanks.html">
 
             <label class="form-label" style="text-align: left;">Your Name</label>
             <input type="text" name="name" class="form-input" placeholder="Full name" id="fname" required>
