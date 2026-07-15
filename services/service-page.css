@@ -333,14 +333,14 @@ nav.scrolled {
 .grid-bg {
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
   background-size: 40px 40px;
   background-position: center top;
   mask-image: radial-gradient(ellipse 60% 50% at 50% 50%, #000 40%, transparent 100%);
   -webkit-mask-image: radial-gradient(ellipse 60% 50% at 50% 50%, #000 40%, transparent 100%);
   pointer-events: none;
-  opacity: 0.6;
+  opacity: 0.85;
   z-index: 1;
 }
 

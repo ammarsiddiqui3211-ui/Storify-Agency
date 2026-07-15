@@ -89,6 +89,41 @@
   </script>
 
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Premium Ambient Glow System for index.html */
+    #mainSite {
+      position: relative;
+      overflow: hidden;
+      background-color: var(--black);
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .ambient-glow {
+      position: absolute;
+      width: 1000px;
+      height: 1000px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, rgba(37, 99, 235, 0.05) 50%, transparent 75%);
+      pointer-events: none;
+      z-index: 1;
+      transform: translate(-50%, -50%);
+      filter: blur(80px);
+      opacity: 0.95;
+    }
+    .ambient-glow.cyan {
+      background: radial-gradient(circle, rgba(6, 182, 212, 0.12) 0%, rgba(6, 182, 212, 0.04) 50%, transparent 75%);
+    }
+    .ambient-glow.purple {
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.12) 0%, rgba(139, 92, 246, 0.04) 50%, transparent 75%);
+    }
+    section, .blog-section, footer {
+      position: relative;
+      z-index: 2;
+      background: transparent !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -110,6 +145,14 @@
 
   <!-- MAIN SITE -->
   <div id="mainSite" style="display:none">
+
+    <!-- Ambient Glowing Lights -->
+    <div class="ambient-glow" style="top: 18%; left: 10%;"></div>
+    <div class="ambient-glow cyan" style="top: 34%; left: 90%;"></div>
+    <div class="ambient-glow purple" style="top: 48%; left: 12%;"></div>
+    <div class="ambient-glow" style="top: 66%; left: 88%;"></div>
+    <div class="ambient-glow cyan" style="top: 80%; left: 15%;"></div>
+    <div class="ambient-glow purple" style="top: 93%; left: 50%;"></div>
 
     <nav>
       <a href="#home" class="logo">
@@ -155,18 +198,12 @@
         <li><a href="blog.html" onclick="toggleMenu()">Blog</a></li>
         <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
       </ul>
-
-      <div class="mobile-contact">
-        <div class="mobile-contact-info">
-          <a href="mailto:storify.store.co@gmail.com" onclick="toggleMenu()">storify.store.co@gmail.com</a>
-          <a href="tel:+923705639606" onclick="toggleMenu()">+92 370 5639606</a>
-        </div>
-      </div>
     </div>
 
     <!-- HERO -->
     <section class="hero" id="home">
       <div class="particles-bg" id="heroPart"></div>
+      <div class="grid-bg"></div>
       <div>
         <div class="hero-badge"><span></span> Pakistan's #1 eCommerce Agency</div>
         <h1>scale your store with<br><span class="accent">All in one solutions</span></h1>
@@ -784,8 +821,8 @@
                 <div class="svc-dropdown-item" onclick="selectService(this, 'Marketing')">Marketing</div>
                 <div class="svc-dropdown-item" onclick="selectService(this, 'Social Media')">Social Media</div>
                 <div class="svc-dropdown-item" onclick="selectService(this, 'eCommerce')">eCommerce</div>
-                <div class="svc-dropdown-item" onclick="selectService(this, 'All-in-One Package')">All-in-One Package
-                </div>
+                <div class="svc-dropdown-item" onclick="selectService(this, 'All-in-One Package')">All-in-One Package</div>
+                <div class="svc-dropdown-item" onclick="selectService(this, 'Other')">Other</div>
               </div>
             </div>
             <input type="hidden" name="service" id="selectedService" value="">
@@ -855,7 +892,7 @@
             <li><a
                 href="mailto:storify.store.co@gmail.com?subject=Free%20Consultation%20Request&body=Hi%20Storify%20Team%2C%0A%0AI%27d%20like%20to%20book%20a%20free%20consultation.%0A%0AName%3A%20%0ABusiness%2FStore%3A%20%0AService%20Needed%3A%20%0AMessage%3A%20%0A%0ALooking%20forward%20to%20hearing%20from%20you!">storify.store.co@gmail.com</a>
             </li>
-            <li><a href="tel:03705639606">0370 5639606</a></li>
+            <li><a href="tel:+923705639606">+92 370 5639606</a></li>
             <li><a href="https://wa.me/923705639606" target="_blank">WhatsApp Us</a></li>
           </ul>
         </div>
