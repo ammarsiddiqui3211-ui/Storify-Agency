@@ -30,13 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('mousemove', (e) => {
     mouseX = e.clientX;
     mouseY = e.clientY;
-    
+
     if (!isVisible) {
       dot.style.opacity = '1';
       ring.style.opacity = '1';
       isVisible = true;
     }
-    
+
     // Position dot instantly
     dot.style.left = `${mouseX}px`;
     dot.style.top = `${mouseY}px`;
@@ -61,12 +61,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const interactives = document.querySelectorAll(
       'a, button, input, select, textarea, [role="button"], .hamburger, .mobile-menu-close, .interactive'
     );
-    
+
     interactives.forEach(el => {
       // Remove existing to avoid double binding if called multiple times
       el.removeEventListener('mouseenter', onMouseEnter);
       el.removeEventListener('mouseleave', onMouseLeave);
-      
+
       el.addEventListener('mouseenter', onMouseEnter);
       el.addEventListener('mouseleave', onMouseLeave);
     });

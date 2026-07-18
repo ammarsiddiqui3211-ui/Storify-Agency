@@ -4960,3 +4960,9 @@ h4,
     grid-template-columns: 1fr !important;
   }
 }
+
+/* Subpage Section Background Overrides to Solid Black */
+body.subpage section,
+body.subpage .blog-section {
+  background: var(--black) !important;
+}
