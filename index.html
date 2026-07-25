@@ -507,25 +507,25 @@
           <p style="color:#93c5fd;font-size:14px;margin-bottom:28px">Our clients consistently outperform industry
             averages</p>
           <div class="metric-bar">
-            <div class="metric-top"><span>Conversion Rate Improvement</span><strong id="m1">+0%</strong></div>
+            <div class="metric-top"><span>Conversion Rate Improvement</span><strong id="m1">+240%</strong></div>
             <div class="bar-track">
               <div class="bar-fill" style="background:#60a5fa" data-w="85%"></div>
             </div>
           </div>
           <div class="metric-bar">
-            <div class="metric-top"><span>Social Media Engagement</span><strong id="m2">+0%</strong></div>
+            <div class="metric-top"><span>Social Media Engagement</span><strong id="m2">+380%</strong></div>
             <div class="bar-track">
               <div class="bar-fill" style="background:#4ade80" data-w="92%"></div>
             </div>
           </div>
           <div class="metric-bar">
-            <div class="metric-top"><span>Average Revenue Growth</span><strong id="m3">+0%</strong></div>
+            <div class="metric-top"><span>Average Revenue Growth</span><strong id="m3">+195%</strong></div>
             <div class="bar-track">
               <div class="bar-fill" style="background:#f472b6" data-w="70%"></div>
             </div>
           </div>
           <div style="margin-top:32px;padding-top:22px;border-top:1px solid rgba(255,255,255,0.1)">
-            <div style="font-size:40px;font-weight:800;color:#fff"><span id="starRating">0.0</span> &#9733;</div>
+            <div style="font-size:40px;font-weight:800;color:#fff"><span id="starRating">4.9</span> &#9733;</div>
             <div style="color:#93c5fd;font-size:13px;margin-top:4px">Average client rating across all projects</div>
           </div>
         </div>
@@ -679,19 +679,19 @@
 
         <div class="reveal">
           <div class="about-visual">
-            <div class="about-big-num"><span id="ab0">0</span>+</div>
+            <div class="about-big-num"><span id="ab0">5</span>+</div>
             <div class="about-big-label">Years in eCommerce</div>
             <div class="about-mini-grid">
               <div class="about-mini-card">
-                <div class="about-mini-num"><span id="ab1">0</span>+</div>
+                <div class="about-mini-num"><span id="ab1">150</span>+</div>
                 <div class="about-mini-label">Stores Built</div>
               </div>
               <div class="about-mini-card">
-                <div class="about-mini-num"><span id="ab2">0</span>%</div>
+                <div class="about-mini-num"><span id="ab2">98</span>%</div>
                 <div class="about-mini-label">Happy Clients</div>
               </div>
               <div class="about-mini-card">
-                <div class="about-mini-num"><span id="ab3">0</span>+</div>
+                <div class="about-mini-num"><span id="ab3">12</span>+</div>
                 <div class="about-mini-label">Industries Served</div>
               </div>
               <div class="about-mini-card">
@@ -1073,7 +1073,6 @@
       if (main) { main.style.display = 'block'; }
       makeParticles('heroPart', 38);
       initReveal();
-      setTimeout(animateBars, 700);
       setTimeout(startCounters, 300);
     }
 
@@ -1099,11 +1098,17 @@
     function initReveal() {
       var els = document.querySelectorAll('.reveal');
       if ('IntersectionObserver' in window) {
+        var whyAnimated = false;
         var aboutAnimated = false;
         var obs = new IntersectionObserver(function (entries) {
           entries.forEach(function (e, i) {
             if (e.isIntersecting) {
               setTimeout(function () { e.target.classList.add('visible'); }, i * 70);
+              // Trigger metric bars when whyus section visible
+              if (!whyAnimated && e.target.closest && e.target.closest('#whyus')) {
+                whyAnimated = true;
+                setTimeout(animateBars, 200);
+              }
               // Trigger about counters when about section visible
               if (!aboutAnimated && e.target.closest && e.target.closest('#about')) {
                 aboutAnimated = true;
