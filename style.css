@@ -88,8 +88,9 @@ body {
 .intro-logo {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 14px;
-  animation: introFade .8s ease both
+  animation: introFade .8s ease both;
 }
 
 .intro-icon {
@@ -101,7 +102,8 @@ body {
 }
 
 .intro-icon img {
-  height: 110px;
+  height: 135px;
+  max-width: 85vw;
   width: auto;
   object-fit: contain;
   border-radius: 0;
@@ -109,24 +111,12 @@ body {
 }
 
 .intro-wordmark {
-  font-size: 80px;
-  font-weight: 900;
-  color: #fff;
-  letter-spacing: 2px;
-  font-family: 'Myriad Pro', 'Myriad', sans-serif;
-  font-style: italic;
-  -webkit-text-stroke: 3px #fff;
+  display: none;
 }
 
 @media(max-width: 768px) {
   .intro-icon img {
     height: 100px;
-  }
-
-  .intro-wordmark {
-    font-size: 100px;
-    letter-spacing: 1px;
-    -webkit-text-stroke: 2px #fff;
   }
 
   .intro-tagline {
@@ -149,12 +139,6 @@ body {
 
   .intro-icon img {
     height: 80px;
-  }
-
-  .intro-wordmark {
-    font-size: 70px;
-    letter-spacing: 0.4px;
-    -webkit-text-stroke: 1px #fff;
   }
 
   .intro-tagline {
