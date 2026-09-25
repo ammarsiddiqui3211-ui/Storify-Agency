@@ -126,74 +126,22 @@
       margin-bottom: 2rem;
     }
 
-    /* Core Values Grid */
-    .values-grid {
+    /* 4-column layout for Our Value System section */
+    .process-steps.four-cols {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
       margin-top: 56px;
-      text-align: left;
     }
 
-    .value-card {
-      position: relative;
-      background: var(--mid);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      border-radius: 24px;
-      padding: 2.5rem;
-      min-height: 280px;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
-      overflow: hidden;
-    }
-
-    .value-card:hover {
-      transform: translateY(-8px);
-      background: rgba(255, 255, 255, 0.04);
-      border-color: rgba(37, 99, 235, 0.15);
-    }
-
-    .value-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 14px;
-      background: rgba(37, 99, 235, 0.12);
-      border: 1px solid rgba(37, 99, 235, 0.2);
-      color: var(--blue-bright);
-      font-weight: 800;
-      font-size: 1.25rem;
-      display: grid;
-      place-items: center;
-      transition: background 0.3s, border-color 0.3s;
-    }
-
-    .value-card:hover .value-icon {
-      background: rgba(37, 99, 235, 0.18);
-      border-color: rgba(37, 99, 235, 0.35);
-    }
-
-    .value-card h3 {
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: var(--white);
-    }
-
-    .value-card p {
-      color: var(--muted);
-      line-height: 1.8;
-      font-size: 0.95rem;
-    }
-
-    @media (max-width: 1024px) {
-      .values-grid {
+    @media (max-width: 1100px) {
+      .process-steps.four-cols {
         grid-template-columns: repeat(2, 1fr);
       }
     }
 
-    @media (max-width: 768px) {
-      .values-grid {
+    @media (max-width: 600px) {
+      .process-steps.four-cols {
         grid-template-columns: 1fr;
       }
     }
@@ -350,24 +298,29 @@
         <p class="section-sub">We remove the friction of managing developers, designers, copywriters, and ad managers.
           Here is how our core system functions.</p>
       </div>
-      <div class="values-grid">
-        <div class="value-card reveal">
-          <div class="value-icon">01</div>
+      <div class="process-steps four-cols">
+        <div class="process-step reveal">
+          <div class="step-num">1</div>
           <h3>Results-first execution</h3>
           <p>We focus on the numbers that matter: conversion rate, traffic quality, revenue growth, retention, and
             profitable customer acquisition.</p>
         </div>
-        <div class="value-card reveal">
-          <div class="value-icon">02</div>
+        <div class="process-step reveal">
+          <div class="step-num">2</div>
           <h3>Complete eCommerce support</h3>
           <p>From Shopify and WooCommerce builds to product visuals, paid ads, SEO, social media, and CRO, your store
             gets one clear growth system.</p>
         </div>
-        <div class="value-card reveal">
-          <div class="value-icon">03</div>
+        <div class="process-step reveal">
+          <div class="step-num">3</div>
           <h3>Clear partnership</h3>
           <p>You get direct communication, practical recommendations, transparent timelines, and a team that treats
             your business like a long-term brand.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-num">4</div>
+          <h3>Data-driven scaling</h3>
+          <p>Continuous conversion rate optimization, analytics tracking, and strategic adjustments to scale your online brand sustainably.</p>
         </div>
       </div>
     </section>
