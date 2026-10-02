@@ -4629,7 +4629,7 @@ h4,
   line-height: 1.2 !important;
 }
 
-.article-body .scope-content > *:not(h2) {
+.article-body .scope-content>*:not(h2) {
   grid-column: 1 / -1 !important;
   width: 100% !important;
   max-width: none !important;
@@ -5117,5 +5117,593 @@ body.subpage .blog-section {
 @media (max-width: 768px) {
   .map-frame-wrapper {
     height: 300px;
+  }
+}
+
+/* ==========================================================================
+   FBR REGISTRATION CERTIFICATE SECTION & LIGHTBOX STYLES
+   ========================================================================== */
+body.subpage section.cert-section,
+.cert-section {
+  background: linear-gradient(180deg, var(--black) 0%, #080814 50%, var(--dark) 100%) !important;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 100px 6%;
+}
+
+.cert-section::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: -5%;
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(50px);
+}
+
+.cert-section::after {
+  content: '';
+  position: absolute;
+  bottom: 5%;
+  right: -5%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(96, 165, 250, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(60px);
+}
+
+.cert-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.cert-tag {
+  background: rgba(37, 99, 235, 0.12) !important;
+  color: var(--blue-bright) !important;
+  border: 1px solid rgba(96, 165, 250, 0.25) !important;
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.15);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 20px !important;
+  border-radius: 50px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+}
+
+.cert-tag::before,
+.cert-tag::after {
+  display: none !important;
+  content: none !important;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 44px;
+  align-items: center;
+  justify-content: center;
+  max-width: 960px;
+  margin: 54px auto 0;
+}
+
+/* Left Column: Certificate Interactive Card */
+.cert-card-wrap {
+  background: rgba(18, 18, 30, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(96, 165, 250, 0.2);
+  border-radius: 20px;
+  padding: 14px;
+  position: relative;
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(37, 99, 235, 0.12);
+  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.cert-card-wrap:hover {
+  border-color: rgba(96, 165, 250, 0.45);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 40px rgba(37, 99, 235, 0.25);
+  transform: translateY(-4px);
+}
+
+.cert-card-badge {
+  position: absolute;
+  top: -12px;
+  right: 24px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 6px 14px;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.35);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  z-index: 3;
+}
+
+.cert-image-frame {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #ffffff;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+.cert-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  display: block;
+}
+
+.cert-card-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.cert-btn-primary {
+  background: var(--blue);
+  color: var(--white);
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+  font-family: inherit;
+}
+
+.cert-btn-primary:hover {
+  background: var(--blue-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.5);
+}
+
+.cert-btn-secondary {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--off-white);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.cert-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Right Column: Spec Cards & Details (Ultra-Sleek Dark Glassmorphism Theme) */
+.cert-details-card {
+  background: rgba(14, 15, 26, 0.85) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(37, 99, 235, 0.3) !important;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 35px rgba(37, 99, 235, 0.15);
+}
+
+.cert-details-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cert-details-header h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+
+.cert-details-header p {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+.cert-details-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(37, 99, 235, 0.15);
+  border: 1px solid rgba(96, 165, 250, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue-bright);
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.2);
+}
+
+.cert-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.cert-spec-item {
+  background: rgba(8, 9, 16, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  transition: border-color 0.25s ease, background 0.25s ease;
+}
+
+.cert-spec-item:hover {
+  border-color: rgba(96, 165, 250, 0.35);
+  background: rgba(15, 18, 32, 0.85);
+}
+
+.cert-spec-icon {
+  color: var(--blue-bright);
+  font-size: 1.05rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.cert-spec-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  overflow: hidden;
+}
+
+.cert-spec-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.cert-spec-value {
+  font-size: 0.88rem;
+  font-weight: 400;
+  color: var(--off-white);
+  word-break: break-word;
+}
+
+.cert-spec-value.highlight {
+  color: var(--white);
+  font-weight: 400;
+}
+
+.cert-spec-value.badge-val {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.spec-verified-tag {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  padding: 3px 10px;
+  border-radius: 50px;
+  font-size: 0.68rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* Trust Banner */
+.cert-trust-banner {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.12) 0%, rgba(16, 185, 129, 0.08) 100%);
+  border: 1px solid rgba(96, 165, 250, 0.22);
+  border-radius: 14px;
+  padding: 18px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.cert-trust-banner .trust-icon {
+  color: #34d399;
+  font-size: 1.4rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.cert-trust-banner h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+
+.cert-trust-banner p {
+  font-size: 0.82rem;
+  color: rgba(232, 232, 240, 0.8);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Trust Badge Pill Styling */
+.trust-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(37, 99, 235, 0.12);
+  color: var(--blue-bright);
+  border: 1px solid rgba(96, 165, 250, 0.25);
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.trust-badge-pill:hover {
+  background: rgba(37, 99, 235, 0.25);
+  border-color: rgba(96, 165, 250, 0.45);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.2);
+}
+
+
+
+/* Standalone D&B DUNS Verification Section Styling */
+.duns-section {
+  padding: 80px 5%;
+  background: var(--black);
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.duns-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.duns-tag {
+  background: rgba(37, 99, 235, 0.15) !important;
+  color: var(--blue-bright) !important;
+  border: 1px solid rgba(96, 165, 250, 0.3) !important;
+  font-weight: 500 !important;
+}
+
+.duns-hero-card {
+  background: rgba(14, 15, 26, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(37, 99, 235, 0.3);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6), 0 0 40px rgba(37, 99, 235, 0.15);
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 40px;
+  align-items: center;
+  transition: border-color 0.3s ease;
+}
+
+.duns-hero-card:hover {
+  border-color: rgba(96, 165, 250, 0.5);
+}
+
+.duns-seal-showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+  background: rgba(8, 9, 16, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+}
+
+.duns-seal-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #ffffff;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 35px rgba(37, 99, 235, 0.35);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.duns-seal-circle:hover {
+  transform: scale(1.05);
+}
+
+.duns-seal-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.duns-verified-badge {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.duns-info-block h3 {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.duns-number-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(37, 99, 235, 0.18);
+  color: var(--blue-bright);
+  border: 1px solid rgba(96, 165, 250, 0.35);
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.duns-info-block p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.duns-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.duns-pillar-item {
+  background: rgba(8, 9, 16, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 16px;
+  transition: border-color 0.25s ease, background 0.25s ease;
+}
+
+.duns-pillar-item:hover {
+  border-color: rgba(96, 165, 250, 0.35);
+  background: rgba(15, 18, 32, 0.85);
+}
+
+.duns-pillar-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(37, 99, 235, 0.15);
+  color: var(--blue-bright);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.duns-pillar-item h4 {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+
+.duns-pillar-item p {
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.45;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .duns-hero-card {
+    grid-template-columns: 1fr;
+    padding: 28px;
+    gap: 28px;
+  }
+  .duns-pillars-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive Media Queries */
+@media (max-width: 991px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  body.subpage section.cert-section,
+  .cert-section {
+    padding: 60px 5%;
+  }
+
+  .cert-specs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-card-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-details-card {
+    padding: 20px;
+  }
+
+  .cert-modal {
+    padding: 12px;
+  }
+
+  .cert-modal-header {
+    padding: 14px 16px;
+    padding-right: 50px;
+  }
+
+  .cert-modal-title span {
+    font-size: 0.82rem;
+  }
+
+  .cert-modal-dl-btn {
+    display: none;
   }
 }
