@@ -173,6 +173,37 @@
       }
     }
 
+    /* 3-column layout for DUNS Registered Credentials section */
+    .process-steps.three-cols {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    @media (max-width: 991px) {
+      .process-steps.three-cols {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .process-steps.three-cols .process-step:nth-child(3):last-child {
+        grid-column: span 2;
+        max-width: 500px;
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .process-steps.three-cols {
+        grid-template-columns: 1fr;
+      }
+      .process-steps.three-cols .process-step:nth-child(3):last-child {
+        grid-column: auto;
+        max-width: none;
+      }
+    }
+
     /* How We Work Scope Timeline (Visual Scope Design & Animation) */
     .section-header {
       text-align: center;
@@ -656,8 +687,7 @@
         </div>
 
         <!-- 3 Cards styled like What Makes Us Different section -->
-        <div class="process-steps three-cols reveal"
-          style="margin-top: 40px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; text-align: center;">
+        <div class="process-steps three-cols reveal">
           <div class="process-step">
             <div class="step-num"><i class="fab fa-apple"></i></div>
             <h3>Apple Store Ready</h3>

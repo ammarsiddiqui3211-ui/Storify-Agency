@@ -1396,6 +1396,34 @@ section {
   margin-top: 56px
 }
 
+.process-steps.three-cols {
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 40px;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .process-steps.three-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .process-steps.three-cols .process-step:nth-child(3):last-child {
+    grid-column: span 2;
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .process-steps.three-cols {
+    grid-template-columns: 1fr;
+  }
+  .process-steps.three-cols .process-step:nth-child(3):last-child {
+    grid-column: auto;
+    max-width: none;
+  }
+}
+
 .process-step {
   text-align: center;
   padding: 36px 22px;
