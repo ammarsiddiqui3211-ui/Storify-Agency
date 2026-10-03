@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://storify.services/sitemap.xml
+Sitemap: https://agency.storifyco.com/sitemap.xml
