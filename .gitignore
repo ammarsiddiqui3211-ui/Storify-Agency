@@ -1,0 +1,16 @@
+# Google Cloud Service Account Keys
+gen-lang-client-*.json
+*.pem
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+npm-debug.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
